@@ -1,0 +1,1541 @@
+
+/* =====================================================
+   COLORES
+===================================================== */
+
+:root{
+    --rosa:#d97899;
+    --rosa-claro:#fdecef;
+    --rosa-muy-claro:#fff8fa;
+    --dorado:#c7a13b;
+    --dorado-claro:#ead78f;
+    --blanco:#ffffff;
+    --crema:#fffdf9;
+    --texto:#543b43;
+    --sombra:rgba(199,161,59,.14);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:var(--crema);
+    color:var(--texto);
+}
+
+
+/* =====================================================
+   BARRA SUPERIOR
+===================================================== */
+
+.barra{
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:95px;
+
+    z-index:9999;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:
+        linear-gradient(
+            90deg,
+            #fff,
+            #fff7f9,
+            #fff,
+            #fff7f9,
+            #fff
+        );
+
+    border-bottom:1px solid var(--dorado-claro);
+
+    box-shadow:
+        0 5px 25px rgba(199,161,59,.16);
+}
+
+.logo{
+    position:absolute;
+    left:25px;
+
+    width:65px;
+    height:65px;
+
+    border-radius:50%;
+
+    border:2px solid var(--dorado);
+
+    background:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    overflow:hidden;
+}
+
+.logo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.logo-texto{
+    font-family:'Great Vibes',cursive;
+    font-size:27px;
+    color:var(--dorado);
+}
+
+.titulo{
+    font-family:'Great Vibes',cursive;
+    font-size:52px;
+    color:var(--dorado);
+}
+
+.menu-btn{
+    position:absolute;
+    right:28px;
+
+    width:42px;
+    height:42px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    gap:6px;
+
+    cursor:pointer;
+}
+
+.menu-btn span{
+    width:38px;
+    height:4px;
+
+    border-radius:10px;
+
+    background:var(--rosa);
+}
+
+
+/* =====================================================
+   MENÚ
+===================================================== */
+
+.menu{
+    position:fixed;
+
+    top:95px;
+    right:-310px;
+
+    width:290px;
+    height:calc(100vh - 95px);
+
+    background:white;
+
+    z-index:10000;
+
+    padding-top:10px;
+
+    box-shadow:-10px 0 35px rgba(199,161,59,.15);
+
+    transition:right .35s ease;
+
+    overflow-y:auto;
+}
+
+.menu.activo{
+    right:0;
+}
+
+.menu a{
+    display:flex;
+    align-items:center;
+
+    gap:15px;
+
+    padding:18px 25px;
+
+    text-decoration:none;
+
+    color:var(--texto);
+
+    font-weight:600;
+
+    border-bottom:1px solid #f7e6ea;
+
+    transition:.2s;
+}
+
+.menu a:hover{
+    background:var(--rosa-claro);
+    color:var(--rosa);
+}
+
+.icono-menu{
+    font-size:22px;
+}
+
+
+/* =====================================================
+   HERO / INICIO
+===================================================== */
+
+.hero{
+    margin-top:95px;
+
+    min-height:680px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff,
+            #fff7f9
+        );
+}
+
+.hero-texto{
+    padding:70px 8% 70px 12%;
+}
+
+.hero-mini{
+    color:var(--dorado);
+
+    font-size:13px;
+
+    font-weight:800;
+
+    letter-spacing:4px;
+}
+
+.hero h1{
+    font-family:'Great Vibes',cursive;
+
+    color:var(--rosa);
+
+    font-size:86px;
+
+    line-height:1;
+
+    margin:18px 0;
+}
+
+.hero h2{
+    font-size:23px;
+
+    font-weight:500;
+
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:550px;
+
+    line-height:1.8;
+
+    font-size:15px;
+}
+
+.hero-boton{
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:15px 30px;
+
+    border-radius:35px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:700;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--rosa),
+            var(--dorado)
+        );
+
+    box-shadow:
+        0 8px 25px rgba(217,120,153,.3);
+
+    transition:.3s;
+}
+
+.hero-boton:hover{
+    transform:translateY(-4px);
+}
+
+.hero-foto{
+    height:680px;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.hero-foto img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+.hero-foto::after{
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.05),
+            transparent
+        );
+}
+
+.etiqueta-hero{
+    position:absolute;
+
+    top:30px;
+    right:30px;
+
+    z-index:2;
+
+    padding:12px 20px;
+
+    border-radius:30px;
+
+    background:white;
+
+    color:var(--rosa);
+
+    font-size:13px;
+
+    font-weight:800;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.1);
+}
+
+
+/* =====================================================
+   SECCIONES
+===================================================== */
+
+.seccion{
+    padding:90px 25px;
+}
+
+.titulo-seccion{
+    text-align:center;
+
+    margin-bottom:50px;
+}
+
+.titulo-seccion span{
+    color:var(--dorado);
+
+    font-size:12px;
+
+    letter-spacing:4px;
+
+    font-weight:800;
+}
+
+.titulo-seccion h2{
+    font-family:'Great Vibes',cursive;
+
+    color:var(--rosa);
+
+    font-size:62px;
+
+    margin-top:8px;
+}
+
+
+/* =====================================================
+   CATEGORÍAS
+===================================================== */
+
+.categorias{
+    max-width:1100px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:20px;
+}
+
+.categoria{
+    background:white;
+
+    padding:30px 20px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    border:1px solid var(--dorado-claro);
+
+    box-shadow:
+        0 10px 30px var(--sombra);
+
+    transition:.3s;
+}
+
+.categoria:hover{
+    transform:translateY(-7px);
+}
+
+.categoria-icono{
+    font-size:40px;
+
+    margin-bottom:15px;
+}
+
+.categoria h3{
+    color:var(--dorado);
+
+    margin-bottom:8px;
+}
+
+.categoria p{
+    font-size:13px;
+
+    line-height:1.6;
+}
+
+
+/* =====================================================
+   CATÁLOGO
+===================================================== */
+
+.catalogo{
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:28px;
+}
+
+.torta{
+    background:white;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    border:1px solid var(--dorado-claro);
+
+    box-shadow:
+        0 12px 35px var(--sombra);
+
+    transition:.3s;
+}
+
+.torta:hover{
+    transform:translateY(-8px);
+}
+
+.torta-foto{
+    height:300px;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.torta-foto img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.5s;
+}
+
+.torta:hover .torta-foto img{
+    transform:scale(1.05);
+}
+
+.etiqueta{
+    position:absolute;
+
+    top:15px;
+    left:15px;
+
+    padding:8px 14px;
+
+    border-radius:20px;
+
+    background:white;
+
+    color:var(--rosa);
+
+    font-size:11px;
+
+    font-weight:800;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.contenido-torta{
+    padding:25px;
+}
+
+.contenido-torta h3{
+    font-family:'Great Vibes',cursive;
+
+    font-size:38px;
+
+    color:var(--rosa);
+
+    margin-bottom:5px;
+}
+
+.contenido-torta p{
+    font-size:13px;
+
+    line-height:1.7;
+
+    margin-bottom:20px;
+}
+
+
+/* =====================================================
+   PRECIOS
+===================================================== */
+
+.precios{
+    display:flex;
+    flex-direction:column;
+
+    gap:7px;
+
+    margin-bottom:20px;
+}
+
+.precio{
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:10px 13px;
+
+    border-radius:12px;
+
+    background:#fff8fa;
+
+    border:1px solid #f2dce2;
+
+    font-size:12px;
+}
+
+.precio strong{
+    color:var(--dorado);
+}
+
+.boton-personalizar{
+    width:100%;
+
+    border:0;
+
+    padding:14px;
+
+    border-radius:30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--rosa),
+            #e6a8bb
+        );
+
+    color:white;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.boton-personalizar:hover{
+    transform:scale(1.02);
+}
+
+
+/* =====================================================
+   PERSONALIZADOR
+===================================================== */
+
+.personaliza{
+    background:
+        linear-gradient(
+            135deg,
+            #fff5f8,
+            #fff,
+            #fff9e8
+        );
+}
+
+.personalizador{
+    max-width:850px;
+
+    margin:auto;
+
+    padding:40px;
+
+    border-radius:35px;
+
+    background:white;
+
+    border:1px solid var(--dorado-claro);
+
+    box-shadow:
+        0 15px 45px var(--sombra);
+}
+
+.paso{
+    margin-bottom:25px;
+}
+
+.paso label{
+    display:block;
+
+    margin-bottom:9px;
+
+    color:var(--dorado);
+
+    font-weight:700;
+
+    font-size:14px;
+}
+
+.paso select,
+.paso input{
+    width:100%;
+
+    padding:14px 16px;
+
+    border-radius:15px;
+
+    border:1px solid #e5ccd3;
+
+    background:#fffafb;
+
+    color:var(--texto);
+
+    font-family:inherit;
+
+    outline:none;
+}
+
+.paso select:focus,
+.paso input:focus{
+    border-color:var(--rosa);
+}
+
+
+/* =====================================================
+   INCLUYE
+===================================================== */
+
+.incluye{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:12px;
+}
+
+.incluye-item{
+    padding:18px;
+
+    text-align:center;
+
+    border-radius:18px;
+
+    background:#fff9fa;
+
+    border:1px solid var(--dorado-claro);
+
+    font-size:12px;
+
+    font-weight:600;
+}
+
+.incluye-item .icono{
+    display:block;
+
+    font-size:27px;
+
+    margin-bottom:5px;
+}
+
+
+/* =====================================================
+   COTIZACIÓN
+===================================================== */
+
+.cotizacion{
+    margin-top:30px;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0f5,
+            #fff9e6
+        );
+
+    border:1px solid var(--dorado-claro);
+}
+
+.cotizacion h3{
+    font-family:'Great Vibes',cursive;
+
+    font-size:40px;
+
+    color:var(--rosa);
+}
+
+.resumen{
+    margin:15px 0;
+
+    font-size:13px;
+
+    line-height:2;
+}
+
+.total{
+    font-size:36px;
+
+    font-weight:800;
+
+    color:var(--dorado);
+
+    margin-bottom:20px;
+}
+
+.boton-agregar{
+    border:0;
+
+    padding:15px 30px;
+
+    border-radius:30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--dorado),
+            #e3c45e
+        );
+
+    color:white;
+
+    font-weight:700;
+
+    cursor:pointer;
+}
+
+
+/* =====================================================
+   CONTACTO
+===================================================== */
+
+.contacto{
+    max-width:950px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:20px;
+}
+
+.contacto-card{
+    background:white;
+
+    border:1px solid var(--dorado-claro);
+
+    border-radius:23px;
+
+    padding:28px;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    color:var(--texto);
+
+    transition:.3s;
+}
+
+.contacto-card:hover{
+    transform:translateY(-5px);
+}
+
+.contacto-icono{
+    font-size:35px;
+
+    margin-bottom:10px;
+}
+
+.contacto-card h3{
+    color:var(--dorado);
+
+    margin-bottom:7px;
+}
+
+.contacto-card p{
+    font-size:13px;
+}
+
+
+/* =====================================================
+   CARRITO
+===================================================== */
+
+.boton-carrito{
+    position:fixed;
+
+    right:25px;
+    bottom:25px;
+
+    width:68px;
+    height:68px;
+
+    border-radius:50%;
+
+    border:3px solid white;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--rosa),
+            var(--dorado)
+        );
+
+    color:white;
+
+    font-size:27px;
+
+    cursor:pointer;
+
+    z-index:9000;
+
+    box-shadow:
+        0 8px 25px rgba(217,120,153,.35);
+}
+
+.contador{
+    position:absolute;
+
+    top:-3px;
+    right:-3px;
+
+    width:25px;
+    height:25px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:var(--rosa);
+
+    border:2px solid var(--rosa);
+
+    font-size:11px;
+
+    font-weight:800;
+}
+
+.fondo-carrito{
+    position:fixed;
+
+    inset:0;
+
+    z-index:10000;
+
+    background:rgba(60,30,40,.35);
+
+    backdrop-filter:blur(3px);
+
+    display:none;
+}
+
+.fondo-carrito.activo{
+    display:block;
+}
+
+.panel-carrito{
+    position:fixed;
+
+    top:0;
+    right:-450px;
+
+    width:420px;
+    max-width:95vw;
+
+    height:100vh;
+
+    z-index:10001;
+
+    background:
+        linear-gradient(
+            180deg,
+            white,
+            #fff6f8
+        );
+
+    box-shadow:
+        -10px 0 40px rgba(199,161,59,.2);
+
+    transition:right .35s ease;
+
+    display:flex;
+    flex-direction:column;
+}
+
+.panel-carrito.activo{
+    right:0;
+}
+
+.carrito-header{
+    padding:25px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    border-bottom:1px solid var(--dorado-claro);
+}
+
+.carrito-header h2{
+    font-family:'Great Vibes',cursive;
+
+    color:var(--rosa);
+
+    font-size:40px;
+}
+
+.cerrar-carrito{
+    border:0;
+
+    background:none;
+
+    font-size:32px;
+
+    color:var(--rosa);
+
+    cursor:pointer;
+}
+
+.productos-carrito{
+    flex:1;
+
+    overflow-y:auto;
+
+    padding:20px;
+}
+
+.carrito-vacio{
+    text-align:center;
+
+    padding:80px 20px;
+
+    color:#987780;
+}
+
+.carrito-vacio div{
+    font-size:65px;
+
+    margin-bottom:15px;
+}
+
+.item-carrito{
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:white;
+
+    border:1px solid var(--dorado-claro);
+
+    border-radius:18px;
+
+    padding:12px;
+
+    margin-bottom:12px;
+}
+
+.item-info{
+    flex:1;
+}
+
+.item-info h4{
+    font-size:14px;
+
+    margin-bottom:5px;
+}
+
+.item-precio{
+    color:var(--dorado);
+
+    font-size:13px;
+
+    font-weight:700;
+}
+
+.eliminar{
+    border:0;
+
+    background:none;
+
+    cursor:pointer;
+
+    font-size:18px;
+}
+
+.carrito-footer{
+    padding:22px;
+
+    border-top:1px solid var(--dorado-claro);
+}
+
+.subtotal{
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:15px;
+
+    font-weight:700;
+}
+
+.subtotal span:last-child{
+    color:var(--dorado);
+}
+
+.finalizar{
+    width:100%;
+
+    padding:15px;
+
+    border:0;
+
+    border-radius:30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--rosa),
+            var(--dorado)
+        );
+
+    color:white;
+
+    font-weight:700;
+
+    cursor:pointer;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer{
+    padding:50px 20px;
+
+    text-align:center;
+
+    background:
+        linear-gradient(
+            135deg,
+            white,
+            #fff1f5
+        );
+
+    border-top:1px solid var(--dorado-claro);
+}
+
+footer h2{
+    font-family:'Great Vibes',cursive;
+
+    font-size:48px;
+
+    color:var(--dorado);
+}
+
+footer p{
+    margin-top:8px;
+
+    font-size:12px;
+}
+
+
+/* =====================================================
+   CELULAR
+===================================================== */
+
+@media(max-width:850px){
+
+    .hero{
+        grid-template-columns:1fr;
+    }
+
+    .hero-texto{
+        padding:130px 25px 50px;
+
+        text-align:center;
+    }
+
+    .hero p{
+        margin:auto;
+    }
+
+    .hero h1{
+        font-size:65px;
+    }
+
+    .hero-foto{
+        height:450px;
+    }
+
+    .categorias{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .catalogo{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .contacto{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .barra{
+        height:78px;
+    }
+
+    .logo{
+        left:10px;
+
+        width:52px;
+        height:52px;
+    }
+
+    .logo-texto{
+        font-size:21px;
+    }
+
+    .titulo{
+        font-size:35px;
+
+        white-space:nowrap;
+    }
+
+    .menu-btn{
+        right:13px;
+    }
+
+    .menu{
+        top:78px;
+
+        height:calc(100vh - 78px);
+    }
+
+    .hero{
+        margin-top:78px;
+    }
+
+    .hero-texto{
+        padding:100px 20px 45px;
+    }
+
+    .hero h1{
+        font-size:58px;
+    }
+
+    .hero h2{
+        font-size:19px;
+    }
+
+    .hero-foto{
+        height:390px;
+    }
+
+    .seccion{
+        padding:65px 15px;
+    }
+
+    .titulo-seccion h2{
+        font-size:48px;
+    }
+
+    .categorias{
+        grid-template-columns:1fr;
+    }
+
+    .catalogo{
+        grid-template-columns:1fr;
+    }
+
+    .incluye{
+        grid-template-columns:1fr;
+    }
+
+    .personalizador{
+        padding:25px 18px;
+    }
+
+    .panel-carrito{
+        width:100%;
+        max-width:100%;
+    }
+
+    .boton-carrito{
+        right:18px;
+        bottom:18px;
+    }
+
+}
+
+/* =====================================================
+   TORTA EN TENDENCIA - PRINCIPAL
+===================================================== */
+
+.tendencia-principal{
+    margin-top:95px;
+
+    min-height:calc(100vh - 95px);
+
+    padding:55px 20px 70px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #fff5f8 0%,
+            #ffffff 55%,
+            #fff9e8 100%
+        );
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.tendencia-contenido{
+    width:100%;
+    max-width:850px;
+
+    position:relative;
+    z-index:2;
+}
+
+.tendencia-mini{
+    display:block;
+
+    color:var(--dorado);
+
+    font-size:12px;
+
+    font-weight:800;
+
+    letter-spacing:5px;
+
+    margin-bottom:10px;
+}
+
+.tendencia-principal h1{
+    font-family:'Great Vibes',cursive;
+
+    color:var(--rosa);
+
+    font-size:78px;
+
+    line-height:1;
+
+    margin:0 0 10px;
+}
+
+.tendencia-subtitulo{
+    font-size:15px;
+
+    color:var(--texto);
+
+    margin-bottom:30px;
+
+    letter-spacing:.5px;
+}
+
+.tendencia-foto{
+    position:relative;
+
+    width:100%;
+    max-width:500px;
+
+    height:420px;
+
+    margin:0 auto;
+
+    border-radius:35px;
+
+    overflow:hidden;
+
+    border:4px solid white;
+
+    box-shadow:
+        0 20px 60px rgba(199,161,59,.25),
+        0 0 0 1px var(--dorado-claro);
+
+    animation:
+        aparecerTorta 1s ease,
+        flotar 4s ease-in-out infinite;
+}
+
+.tendencia-foto img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:transform .8s ease;
+}
+
+.tendencia-foto:hover img{
+    transform:scale(1.07);
+}
+
+.tendencia-etiqueta{
+    position:absolute;
+
+    top:20px;
+    left:20px;
+
+    z-index:5;
+
+    padding:11px 18px;
+
+    border-radius:30px;
+
+    background:white;
+
+    color:var(--rosa);
+
+    font-size:11px;
+
+    font-weight:800;
+
+    box-shadow:0 7px 20px rgba(0,0,0,.15);
+}
+
+.tendencia-info{
+    max-width:650px;
+
+    margin:25px auto 0;
+}
+
+.tendencia-info p{
+    font-size:14px;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+}
+
+.tendencia-boton{
+    display:inline-block;
+
+    padding:15px 32px;
+
+    border-radius:35px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:700;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--rosa),
+            var(--dorado)
+        );
+
+    box-shadow:
+        0 10px 30px rgba(217,120,153,.3);
+
+    transition:.3s;
+}
+
+.tendencia-boton:hover{
+    transform:translateY(-5px) scale(1.03);
+}
+
+/* =====================================================
+   ANIMACIONES
+===================================================== */
+
+@keyframes aparecerTorta{
+
+    from{
+        opacity:0;
+        transform:scale(.85) translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1) translateY(0);
+    }
+
+}
+
+@keyframes flotar{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+}
+
+@keyframes brillo{
+
+    0%{
+        transform:translateX(-120%);
+    }
+
+    35%{
+        transform:translateX(120%);
+    }
+
+    100%{
+        transform:translateX(120%);
+    }
+
+}
+
+
+/* =====================================================
+   TENDENCIA EN CELULAR
+===================================================== */
+
+@media(max-width:600px){
+
+   .tendencia-principal{
+    margin-top:78px;
+
+    min-height:auto;
+
+    padding:45px 18px 55px;
+}
+
+.tendencia-mini{
+    font-size:10px;
+    letter-spacing:3px;
+}
+
+.tendencia-principal h1{
+    font-size:55px;
+    line-height:1.05;
+}
+
+.tendencia-subtitulo{
+    font-size:13px;
+
+    line-height:1.6;
+
+    margin-bottom:25px;
+}
+
+.tendencia-foto{
+    height:320px;
+
+    border-radius:25px;
+}
+
+.tendencia-etiqueta{
+    top:15px;
+    left:15px;
+
+    padding:9px 14px;
+}
+
+.tendencia-info{
+    margin-top:20px;
+}
+
+.tendencia-info p{
+    font-size:13px;
+}
+}
+

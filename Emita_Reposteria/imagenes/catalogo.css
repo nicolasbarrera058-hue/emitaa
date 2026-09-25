@@ -1,0 +1,1352 @@
+:root {
+            --rosa: #d97899;
+            --rosa-oscuro: #a94f6c;
+            --rosa-claro: #fdecef;
+            --rosa-suave: #fff7f9;
+
+            --dorado: #c7a13b;
+            --dorado-claro: #ead78f;
+
+            --blanco: #ffffff;
+            --crema: #fffdf9;
+
+            --texto: #513c43;
+            --gris: #777;
+
+            --sombra: rgba(199,161,59,.16);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: var(--crema);
+            color: var(--texto);
+        }
+
+        button,
+        select,
+        input,
+        textarea {
+            font-family: inherit;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        /* =========================
+           BARRA SUPERIOR
+        ========================== */
+
+        
+.barra{
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:95px;
+
+    z-index:9999;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:
+        linear-gradient(
+            90deg,
+            #fff,
+            #fff7f9,
+            #fff,
+            #fff7f9,
+            #fff
+        );
+
+    border-bottom:1px solid var(--dorado-claro);
+
+    box-shadow:
+        0 5px 25px rgba(199,161,59,.16);
+}
+
+
+       .logo{
+    position:absolute;
+    left:25px;
+
+    width:65px;
+    height:65px;
+
+    border-radius:50%;
+
+    border:2px solid var(--dorado);
+
+    background:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    overflow:hidden;
+}
+
+.logo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.logo-texto{
+    font-family:'Great Vibes',cursive;
+    font-size:27px;
+    color:var(--dorado);
+}
+
+        .titulo-barra{
+    font-family:'Great Vibes',cursive;
+    font-size:52px;
+    color:var(--dorado);
+}
+
+        .menu-btn {
+            border: none;
+            background: transparent;
+            font-size: 28px;
+            color: var(--rosa-oscuro);
+        }
+
+        /* =========================
+           MENU
+        ========================== */
+
+        .menu-btn{
+    position:absolute;
+    right:28px;
+
+    width:42px;
+    height:42px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    gap:6px;
+
+    cursor:pointer;
+}
+
+.menu-btn span{
+    width:38px;
+    height:4px;
+
+    border-radius:10px;
+
+    background:var(--rosa);
+}
+
+
+/* =====================================================
+   MENÚ
+===================================================== */
+
+.menu{
+    position:fixed;
+
+    top:95px;
+    right:-310px;
+
+    width:290px;
+    height:calc(100vh - 95px);
+
+    background:white;
+
+    z-index:10000;
+
+    padding-top:10px;
+
+    box-shadow:-10px 0 35px rgba(199,161,59,.15);
+
+    transition:right .35s ease;
+
+    overflow-y:auto;
+}
+
+.menu.activo{
+    right:0;
+}
+
+.menu a{
+    display:flex;
+    align-items:center;
+
+    gap:15px;
+
+    padding:18px 25px;
+
+    text-decoration:none;
+
+    color:var(--texto);
+
+    font-weight:600;
+
+    border-bottom:1px solid #f7e6ea;
+
+    transition:.2s;
+}
+
+.menu a:hover{
+    background:var(--rosa-claro);
+    color:var(--rosa);
+}
+
+.icono-menu{
+    font-size:22px;
+}
+
+
+        /* =========================
+           HERO
+        ========================== */
+
+        .hero {
+            min-height: 560px;
+
+            padding: 150px 30px 80px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
+            background:
+                radial-gradient(circle at 20% 20%, #fdecef, transparent 35%),
+                radial-gradient(circle at 80% 80%, #f8e9b7, transparent 35%),
+                var(--crema);
+        }
+
+        .hero-contenido {
+            max-width: 850px;
+        }
+
+        .hero pequeño {
+            color: var(--dorado);
+        }
+
+        .hero h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: clamp(60px, 9vw, 110px);
+
+            color: var(--dorado);
+
+            font-weight: 400;
+        }
+
+        .hero h2 {
+            font-family: 'Cinzel', serif;
+
+            font-size: clamp(20px, 4vw, 34px);
+
+            letter-spacing: 5px;
+
+            color: var(--rosa-oscuro);
+
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+
+            color: var(--gris);
+
+            line-height: 1.8;
+        }
+
+        /* =========================
+           SECCIONES
+        ========================== */
+
+        .seccion {
+            padding: 80px 6%;
+        }
+
+        .titulo-seccion {
+            text-align: center;
+
+            margin-bottom: 50px;
+        }
+
+        .titulo-seccion h2 {
+            font-family: 'Great Vibes', cursive;
+
+            font-size: 55px;
+
+            color: var(--dorado);
+        }
+
+        .titulo-seccion p {
+            color: var(--gris);
+            margin-top: 5px;
+        }
+
+        /* =========================
+           CATEGORIAS
+        ========================== */
+
+        .categorias {
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 25px;
+
+            max-width: 1200px;
+
+            margin: auto;
+        }
+
+        .categoria {
+            min-height: 190px;
+
+            border-radius: 22px;
+
+            background: white;
+
+            border: 1px solid #ead8a2;
+
+            padding: 35px 20px;
+
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
+            transition: .3s;
+
+            box-shadow: 0 10px 25px var(--sombra);
+        }
+
+        .categoria:hover {
+            transform: translateY(-7px);
+
+            box-shadow: 0 18px 35px rgba(199,161,59,.25);
+        }
+
+        .categoria .icono {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .categoria h3 {
+            font-family: 'Cinzel', serif;
+
+            color: var(--rosa-oscuro);
+
+            font-size: 16px;
+        }
+
+        .categoria p {
+            font-size: 12px;
+
+            color: var(--gris);
+
+            margin-top: 8px;
+        }
+
+        /* =========================
+           CATALOGO
+        ========================== */
+
+        #vistaCategoria {
+            display: none;
+        }
+
+        .volver {
+            border: none;
+
+            background: var(--rosa-claro);
+
+            color: var(--rosa-oscuro);
+
+            padding: 12px 20px;
+
+            border-radius: 30px;
+
+            margin-bottom: 25px;
+
+            font-weight: 600;
+        }
+
+        .cabecera-categoria {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .cabecera-categoria h2 {
+            font-family: 'Great Vibes', cursive;
+
+            font-size: 65px;
+
+            color: var(--dorado);
+        }
+
+        .cabecera-categoria p {
+            color: var(--gris);
+        }
+
+        .tortas-grid {
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 25px;
+        }
+
+        /* =========================
+           TARJETA TORTA
+        ========================== */
+
+        .torta-card {
+            background: white;
+
+            border-radius: 20px;
+
+            overflow: hidden;
+
+            border: 1px solid #ead8a2;
+
+            box-shadow: 0 8px 25px var(--sombra);
+
+            transition: .3s;
+        }
+
+        .torta-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .imagen-torta {
+            width: 100%;
+
+            aspect-ratio: 1 / 1;
+
+            object-fit: cover;
+
+            display: block;
+
+            background: #f7eeee;
+        }
+
+        .torta-contenido {
+            padding: 18px;
+        }
+
+        .referencia {
+            font-family: 'Cinzel', serif;
+
+            font-size: 12px;
+
+            color: var(--dorado);
+
+            letter-spacing: 1px;
+
+            margin-bottom: 15px;
+        }
+
+        .campo {
+            margin-bottom: 12px;
+        }
+
+        .campo label {
+            display: block;
+
+            font-size: 11px;
+
+            color: var(--gris);
+
+            margin-bottom: 5px;
+        }
+
+        .campo select {
+            width: 100%;
+
+            padding: 10px;
+
+            border: 1px solid #ead8a2;
+
+            border-radius: 10px;
+
+            background: white;
+
+            color: var(--texto);
+        }
+
+        .precio-torta {
+            font-size: 20px;
+
+            font-weight: 700;
+
+            color: var(--rosa-oscuro);
+
+            margin: 15px 0;
+        }
+
+        .btn-carrito {
+            width: 100%;
+
+            border: none;
+
+            padding: 13px;
+
+            border-radius: 30px;
+
+            background: linear-gradient(
+                135deg,
+                var(--dorado),
+                var(--dorado-claro)
+            );
+
+            color: white;
+
+            font-weight: 700;
+        }
+
+        /* =========================
+           CARRITO FLOTANTE
+        ========================== */
+
+        .boton-carrito {
+            position: fixed;
+
+            right: 25px;
+            bottom: 25px;
+
+            width: 62px;
+            height: 62px;
+
+            border-radius: 50%;
+
+            border: none;
+
+            background: var(--rosa-oscuro);
+
+            color: white;
+
+            font-size: 25px;
+
+            z-index: 1500;
+
+            box-shadow: 0 10px 30px rgba(169,79,108,.35);
+        }
+
+        .contador-carrito {
+            position: absolute;
+
+            top: -5px;
+            right: -5px;
+
+            background: var(--dorado);
+
+            width: 25px;
+            height: 25px;
+
+            border-radius: 50%;
+
+            font-size: 12px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* =========================
+           PANEL CARRITO
+        ========================== */
+
+        .carrito-panel {
+            position: fixed;
+
+            top: 0;
+            right: -450px;
+
+            width: 450px;
+            max-width: 100%;
+
+            height: 100vh;
+
+            background: white;
+
+            z-index: 3000;
+
+            box-shadow: -10px 0 30px rgba(0,0,0,.15);
+
+            transition: .4s;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .carrito-panel.abierto {
+            right: 0;
+        }
+
+        .carrito-header {
+            padding: 25px;
+
+            border-bottom: 1px solid #eee;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .carrito-header h2 {
+            font-family: 'Great Vibes', cursive;
+
+            color: var(--dorado);
+
+            font-size: 38px;
+        }
+
+        .cerrar-carrito {
+            border: none;
+
+            background: none;
+
+            font-size: 25px;
+
+            color: var(--rosa-oscuro);
+        }
+
+        .carrito-items {
+            flex: 1;
+
+            overflow-y: auto;
+
+            padding: 20px;
+        }
+
+        .carrito-vacio {
+            text-align: center;
+
+            color: var(--gris);
+
+            padding: 50px 20px;
+        }
+
+        .item-carrito {
+            display: grid;
+
+            grid-template-columns: 75px 1fr auto;
+
+            gap: 12px;
+
+            padding: 15px 0;
+
+            border-bottom: 1px solid #eee;
+        }
+
+        .item-carrito img {
+            width: 75px;
+            height: 75px;
+
+            object-fit: cover;
+
+            border-radius: 12px;
+        }
+
+        .item-info h4 {
+            color: var(--rosa-oscuro);
+
+            font-size: 14px;
+
+            margin-bottom: 5px;
+        }
+
+        .item-info p {
+            font-size: 11px;
+
+            color: var(--gris);
+
+            line-height: 1.6;
+        }
+
+        .item-precio {
+            text-align: right;
+
+            font-weight: 700;
+
+            color: var(--dorado);
+
+            font-size: 13px;
+        }
+
+        .btn-eliminar {
+            border: none;
+
+            background: none;
+
+            color: #b65d5d;
+
+            margin-top: 8px;
+        }
+
+        .carrito-footer {
+            padding: 20px;
+
+            border-top: 1px solid #eee;
+        }
+
+        .total {
+            display: flex;
+
+            justify-content: space-between;
+
+            font-size: 21px;
+
+            font-weight: 700;
+
+            color: var(--rosa-oscuro);
+
+            margin-bottom: 15px;
+        }
+
+        .btn-whatsapp {
+            width: 100%;
+
+            border: none;
+
+            background: #25D366;
+
+            color: white;
+
+            padding: 15px;
+
+            border-radius: 30px;
+
+            font-weight: 700;
+
+            font-size: 15px;
+        }
+
+        /* =========================
+           PERSONALIZADOR
+        ========================== */
+
+        .boton-personalizar {
+            position: fixed;
+
+            left: 25px;
+            bottom: 25px;
+
+            z-index: 1500;
+
+            border: none;
+
+            border-radius: 30px;
+
+            padding: 15px 22px;
+
+            background: white;
+
+            color: var(--rosa-oscuro);
+
+            border: 1px solid var(--dorado);
+
+            font-weight: 700;
+
+            box-shadow: 0 10px 25px rgba(0,0,0,.12);
+        }
+
+        .personalizador {
+            display: none;
+
+            padding: 80px 6%;
+
+            background: var(--rosa-suave);
+        }
+
+        .personalizador.activo {
+            display: block;
+        }
+
+        .personalizador-contenido {
+            max-width: 750px;
+
+            margin: auto;
+
+            background: white;
+
+            padding: 40px;
+
+            border-radius: 25px;
+
+            border: 1px solid #ead8a2;
+
+            box-shadow: 0 15px 40px var(--sombra);
+        }
+
+        .personalizador h2 {
+            font-family: 'Great Vibes', cursive;
+
+            font-size: 55px;
+
+            color: var(--dorado);
+
+            text-align: center;
+
+            margin-bottom: 10px;
+        }
+
+        .personalizador p {
+            text-align: center;
+
+            color: var(--gris);
+
+            margin-bottom: 25px;
+        }
+
+        .personalizador textarea {
+            width: 100%;
+
+            min-height: 150px;
+
+            border: 1px solid #ead8a2;
+
+            border-radius: 15px;
+
+            padding: 15px;
+
+            resize: vertical;
+
+            outline: none;
+        }
+
+        .archivo {
+            margin: 20px 0;
+        }
+
+        .preview-foto {
+            display: none;
+
+            width: 200px;
+            height: 200px;
+
+            object-fit: cover;
+
+            border-radius: 15px;
+
+            margin: 15px auto;
+        }
+
+        .btn-enviar-personalizacion {
+            width: 100%;
+
+            padding: 15px;
+
+            border: none;
+
+            border-radius: 30px;
+
+            background: var(--rosa-oscuro);
+
+            color: white;
+
+            font-weight: 700;
+        }
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            background: #2e2226;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 50px 20px;
+        }
+
+        footer h2 {
+            font-family: 'Great Vibes', cursive;
+
+            color: var(--dorado-claro);
+
+            font-size: 45px;
+        }
+
+        footer p {
+            color: #ddd;
+
+            margin-top: 10px;
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media(max-width:1000px) {
+
+            .categorias {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .tortas-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+        }
+
+        @media(max-width:700px) {
+
+            .barra-superior {
+                height: 65px;
+
+                padding: 0 15px;
+            }
+
+            .logo {
+                font-size: 27px;
+            }
+
+            .titulo-barra {
+                font-size: 11px;
+
+                letter-spacing: 2px;
+            }
+
+            .hero {
+                padding-top: 120px;
+            }
+
+            .seccion {
+                padding: 60px 5%;
+            }
+
+            .categorias {
+                grid-template-columns: 1fr;
+            }
+
+            .tortas-grid {
+                grid-template-columns: repeat(2, 1fr);
+
+                gap: 12px;
+            }
+
+            .torta-contenido {
+                padding: 12px;
+            }
+
+            .referencia {
+                font-size: 10px;
+            }
+
+            .campo select {
+                padding: 8px;
+
+                font-size: 11px;
+            }
+
+            .precio-torta {
+                font-size: 16px;
+            }
+
+            .btn-carrito {
+                font-size: 11px;
+
+                padding: 10px;
+            }
+
+            .boton-personalizar {
+                left: 12px;
+                bottom: 12px;
+
+                font-size: 11px;
+
+                padding: 12px 15px;
+            }
+
+            .boton-carrito {
+                right: 12px;
+                bottom: 12px;
+            }
+
+            .personalizador-contenido {
+                padding: 25px 18px;
+            }
+
+        }
+
+        /* =========================================
+   CATEGORÍAS - ESTILO VISUAL
+========================================= */
+
+.seccion-categorias {
+    padding: 80px 6%;
+    background: #fff;
+}
+
+
+.encabezado-categorias {
+    max-width: 750px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+
+.mini-titulo {
+    display: block;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    color: #c7a13b;
+
+    margin-bottom: 12px;
+}
+
+
+.encabezado-categorias h2 {
+    font-family: 'Great Vibes', cursive;
+
+    font-size: clamp(48px, 6vw, 70px);
+
+    font-weight: 400;
+
+    color: #a94f6c;
+
+    margin-bottom: 10px;
+}
+
+
+.encabezado-categorias p {
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.categorias-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 22px;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+}
+
+
+/* =========================================
+   TARJETA
+========================================= */
+
+.categoria-card {
+
+    position: relative;
+
+    height: 315px;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    background: #eee;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+
+.categoria-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 18px 40px rgba(0,0,0,.15);
+
+}
+
+
+/* =========================================
+   IMAGEN
+========================================= */
+
+.categoria-imagen {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 100%;
+
+}
+
+
+.categoria-imagen img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        transform .6s ease;
+
+}
+
+
+.categoria-card:hover
+.categoria-imagen img {
+
+    transform: scale(1.06);
+
+}
+
+
+/* =========================================
+   DEGRADADO
+========================================= */
+
+.categoria-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0,0,0,0) 25%,
+            rgba(0,0,0,.15) 45%,
+            rgba(0,0,0,.85) 100%
+        );
+
+}
+
+
+/* =========================================
+   CONTENIDO
+========================================= */
+
+.categoria-contenido {
+
+    position: absolute;
+
+    left: 25px;
+
+    right: 20px;
+
+    bottom: 23px;
+
+    color: white;
+
+}
+
+
+.categoria-numero {
+
+    display: block;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    color: #ead78f;
+
+    margin-bottom: 5px;
+
+}
+
+
+.categoria-contenido h3 {
+
+    font-family: 'Great Vibes', cursive;
+
+    font-size: 39px;
+
+    font-weight: 400;
+
+    color: white;
+
+    line-height: 1;
+
+    margin-bottom: 8px;
+
+}
+
+
+.categoria-contenido p {
+
+    font-size: 11px;
+
+    line-height: 1.4;
+
+    color: white;
+
+    max-width: 230px;
+
+    margin-bottom: 13px;
+
+}
+
+
+/* =========================================
+   BOTÓN VER TORTAS
+========================================= */
+
+.categoria-contenido button {
+
+    background: transparent;
+
+    color: white;
+
+    border: 1px solid rgba(255,255,255,.8);
+
+    border-radius: 30px;
+
+    padding: 8px 15px;
+
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+
+    transition: .3s;
+
+}
+
+
+.categoria-contenido button:hover {
+
+    background: white;
+
+    color: #513c43;
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width: 1000px) {
+
+    .categorias-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media(max-width: 600px) {
+
+    .seccion-categorias {
+
+        padding:
+            60px 18px;
+
+    }
+
+
+    .categorias-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 12px;
+
+    }
+
+
+    .categoria-card {
+
+        height: 260px;
+
+        border-radius: 18px;
+
+    }
+
+
+    .categoria-contenido {
+
+        left: 15px;
+
+        right: 12px;
+
+        bottom: 15px;
+
+    }
+
+
+    .categoria-numero {
+
+        font-size: 7px;
+
+        letter-spacing: 2px;
+
+    }
+
+
+    .categoria-contenido h3 {
+
+        font-size: 29px;
+
+    }
+
+
+    .categoria-contenido p {
+
+        font-size: 9px;
+
+        margin-bottom: 9px;
+
+    }
+
+
+    .categoria-contenido button {
+
+        padding:
+            7px 11px;
+
+        font-size: 7px;
+
+    }
+
+}

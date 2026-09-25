@@ -1,0 +1,2662 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="catalogo.css">
+
+<title>Emita Repostería | Catálogo</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     BARRA
+===================================================== -->
+
+<header class="barra">
+
+    <div class="logo">
+        <span class="logo-texto"><img src="emita.jpg" alt=""></span>
+    </div>
+
+    <div class="titulo-barra">
+        Emita Repostería
+    </div>
+
+    <button
+    class="menu-btn"
+    onclick="abrirMenu()">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+</header>
+
+
+<!-- =====================================================
+     MENÚ
+===================================================== -->
+
+<nav class="menu" id="menu">
+
+    <h2>Emita</h2>
+
+    <a onclick="mostrarInicio()">
+        🏠 Inicio
+    </a>
+
+    <a onclick="mostrarCatalogo()">
+        🎂 Catálogo
+    </a>
+
+    <a onclick="mostrarPersonalizador()">
+        ✨ Personaliza tu torta
+    </a>
+
+    <a href="#contacto" onclick="cerrarMenu()">
+        💌 Contacto
+    </a>
+
+</nav>
+
+
+ <!-- =========================
+         INICIO
+    ========================== -->
+
+    <main id="inicio">
+
+        <section class="hero">
+
+            <div class="hero-contenido">
+
+                <h1>Emita</h1>
+
+                <h2>REPOSTERÍA</h2>
+
+                <p>
+                    Tortas creadas con amor, dedicación y detalles
+                    pensados especialmente para celebrar tus momentos.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="seccion-categorias">
+
+    <div class="encabezado-categorias">
+
+        <span class="mini-titulo">
+            NUESTRA COLECCIÓN
+        </span>
+
+        <h2>
+            Elige la ocasión
+        </h2>
+
+        <p>
+            Descubre nuestras tortas y encuentra el diseño perfecto
+            para hacer de tu celebración un momento inolvidable.
+        </p>
+
+    </div>
+
+
+    <div class="categorias-grid">
+
+
+        <!-- =========================
+             BODAS
+        ========================== -->
+
+        <article class="categoria-card">
+
+            <div class="categoria-imagen">
+
+                <img
+                    src="imagenes/bodas/boda (1).jpeg"
+                    alt="Tortas para bodas"
+                    onerror="imagenCategoriaNoEncontrada(this)"
+                >
+
+                <div class="categoria-overlay"></div>
+
+                <div class="categoria-contenido">
+
+                    <span class="categoria-numero">
+                        01 · CELEBRACIÓN
+                    </span>
+
+                    <h3>
+                        Bodas
+                    </h3>
+
+                    <p>
+                        Diseños elegantes para un día inolvidable.
+                    </p>
+
+                    <button
+                        onclick="abrirCategoria('bodas')">
+
+                        VER TORTAS →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <!-- =========================
+     BAUTIZOS
+========================== -->
+
+<article class="categoria-card">
+
+    <div class="categoria-imagen">
+
+        <img
+            src="bautizos/bautizo2  (13).jpeg"
+            alt="Tortas para bautizos"
+            onerror="imagenCategoriaNoEncontrada(this)"
+        >
+
+        <div class="categoria-overlay"></div>
+
+        <div class="categoria-contenido">
+
+            <span class="categoria-numero">
+                02 · CELEBRACIÓN
+            </span>
+
+            <h3>
+                Bautizos
+            </h3>
+
+            <p>
+                Diseños delicados para un día muy especial.
+            </p>
+
+            <button
+                onclick="abrirCategoria('bautizos')">
+
+                VER TORTAS →
+
+            </button>
+
+        </div>
+
+    </div>
+
+</article>
+
+
+
+        <!-- =========================
+             BABY SHOWER
+        ========================== -->
+
+        <article class="categoria-card">
+
+            <div class="categoria-imagen">
+
+                <img
+                    src="imagenes/baby shower y revelacion/baby (3).jpeg"
+                    alt="Tortas para baby shower y revelación"
+                    onerror="imagenCategoriaNoEncontrada(this)"
+                >
+
+                <div class="categoria-overlay"></div>
+
+                <div class="categoria-contenido">
+
+                    <span class="categoria-numero">
+                        02 · DULCE ESPERA
+                    </span>
+
+                    <h3>
+                        Baby shower
+                    </h3>
+
+                    <p>
+                        Baby shower y revelaciones.
+                    </p>
+
+                    <button
+                        onclick="abrirCategoria('baby')">
+
+                        VER TORTAS →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =========================
+             INFANTILES
+        ========================== -->
+
+        <article class="categoria-card">
+
+            <div class="categoria-imagen">
+
+                <img
+                    src="imagenes/tortas/categorias/infantiles.jpg"
+                    alt="Tortas infantiles"
+                    onerror="imagenCategoriaNoEncontrada(this)"
+                >
+
+                <div class="categoria-overlay"></div>
+
+                <div class="categoria-contenido">
+
+                    <span class="categoria-numero">
+                        03 · DIVERSIÓN
+                    </span>
+
+                    <h3>
+                        Infantiles
+                    </h3>
+
+                    <p>
+                        Color, personajes y diversión.
+                    </p>
+
+                    <button
+                        onclick="abrirCategoria('infantiles')">
+
+                        VER TORTAS →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =========================
+             50 AÑOS
+        ========================== -->
+
+        <article class="categoria-card">
+
+            <div class="categoria-imagen">
+
+                <img
+                    src="imagenes/tortas/categorias/50-anos.jpg"
+                    alt="Tortas para 50 años y más"
+                    onerror="imagenCategoriaNoEncontrada(this)"
+                >
+
+                <div class="categoria-overlay"></div>
+
+                <div class="categoria-contenido">
+
+                    <span class="categoria-numero">
+                        04 · CELEBRACIÓN
+                    </span>
+
+                    <h3>
+                        50 años y más...
+                    </h3>
+
+                    <p>
+                        Celebraciones que merecen algo especial.
+                    </p>
+
+                    <button
+                        onclick="abrirCategoria('50')">
+
+                        VER TORTAS →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =========================
+             GRADOS
+        ========================== -->
+
+        <article class="categoria-card">
+
+            <div class="categoria-imagen">
+
+                <img
+                    src="imagenes/grados/h (4) - copia.jpeg"
+                    alt="Tortas para grados"
+                    onerror="imagenCategoriaNoEncontrada(this)"
+                >
+
+                <div class="categoria-overlay"></div>
+
+                <div class="categoria-contenido">
+
+                    <span class="categoria-numero">
+                        05 · LOGROS
+                    </span>
+
+                    <h3>
+                        Grados
+                    </h3>
+
+                    <p>
+                        Celebra todo lo que has logrado.
+                    </p>
+
+                    <button
+                        onclick="abrirCategoria('grados')">
+
+                        VER TORTAS →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =========================
+             CABALLEROS
+        ========================== -->
+
+        <article class="categoria-card">
+
+            <div class="categoria-imagen">
+
+                <img
+                    src="imagenes/tortas/categorias/caballeros.jpg"
+                    alt="Tortas para caballeros"
+                    onerror="imagenCategoriaNoEncontrada(this)"
+                >
+
+                <div class="categoria-overlay"></div>
+
+                <div class="categoria-contenido">
+
+                    <span class="categoria-numero">
+                        06 · PARA ÉL
+                    </span>
+
+                    <h3>
+                        Caballeros
+                    </h3>
+
+                    <p>
+                        Diseños especiales para celebrar.
+                    </p>
+
+                    <button
+                        onclick="abrirCategoria('caballeros')">
+
+                        VER TORTAS →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <!-- =========================
+     TENDENCIAS
+========================== -->
+
+<article class="categoria-card">
+
+    <div class="categoria-imagen">
+
+        <img
+            src="imagenes/tendencias/tendencia 25 (3).jpeg"
+            alt="Tortas en tendencia"
+            onerror="imagenCategoriaNoEncontrada(this)"
+        >
+
+        <div class="categoria-overlay"></div>
+
+        <div class="categoria-contenido">
+
+            <span class="categoria-numero">
+                08 · TENDENCIA
+            </span>
+
+            <h3>
+                Tendencias
+            </h3>
+
+            <p>
+                Los diseños y estilos que están marcando tendencia.
+            </p>
+
+            <button
+                onclick="abrirCategoria('tendencias')">
+
+                VER TORTAS →
+
+            </button>
+
+        </div>
+
+    </div>
+
+</article>
+
+
+
+        <!-- =========================
+             PERSONALIZADAS
+        ========================== -->
+
+        <article class="categoria-card">
+
+            <div class="categoria-imagen">
+
+                <img
+                    src="imagenes/personalizadas/personalizadas (2).jpeg"
+                    alt="Tortas personalizadas"
+                    onerror="imagenCategoriaNoEncontrada(this)"
+                >
+
+                <div class="categoria-overlay"></div>
+
+                <div class="categoria-contenido">
+
+                    <span class="categoria-numero">
+                        07 · ÚNICA
+                    </span>
+
+                    <h3>
+                        Personalizadas
+                    </h3>
+
+                    <p>
+                        Una torta creada especialmente para ti.
+                    </p>
+
+                    <button
+                        onclick="abrirCategoria('personalizadas')">
+
+                        VER TORTAS →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =========================
+             MINI CAKE
+        ========================== -->
+
+        <article class="categoria-card">
+
+            <div class="categoria-imagen">
+
+                <img
+                    src="imagenes/tortas/categorias/mini.jpg"
+                    alt="Mini cakes"
+                    onerror="imagenCategoriaNoEncontrada(this)"
+                >
+
+                <div class="categoria-overlay"></div>
+
+                <div class="categoria-contenido">
+
+                    <span class="categoria-numero">
+                        08 · MINI
+                    </span>
+
+                    <h3>
+                        Mini Cake
+                    </h3>
+
+                    <p>
+                        Pequeñas, delicadas y especiales.
+                    </p>
+
+                    <button
+                        onclick="abrirCategoria('mini')">
+
+                        VER TORTAS →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+    </main>
+
+
+    <!-- =========================
+         VISTA CATEGORIA
+    ========================== -->
+
+    <section id="vistaCategoria" class="seccion">
+
+        <button class="volver" onclick="mostrarCatalogo()">
+            ← Volver al catálogo
+        </button>
+
+        <div class="cabecera-categoria">
+
+            <h2 id="nombreCategoria"></h2>
+
+            <p id="descripcionCategoria"></p>
+
+        </div>
+
+        <div id="tortasGrid" class="tortas-grid"></div>
+
+    </section>
+
+
+    <!-- =========================
+         PERSONALIZADOR
+    ========================== -->
+
+    <section id="personalizador" class="personalizador">
+
+        <div class="personalizador-contenido">
+
+            <h2>Personaliza tu torta</h2>
+
+            <p>
+                Cuéntanos cómo imaginas tu torta y te enviaremos
+                una cotización personalizada.
+            </p>
+
+            <textarea
+                id="descripcionPersonalizada"
+                placeholder="Describe aquí tu idea: colores, temática, decoración, nombre, edad, mensaje, etc.">
+            </textarea>
+
+
+            <div class="archivo">
+
+                <label>
+                    📷 ¿Tienes una imagen de referencia?
+                </label>
+
+                <br><br>
+
+                <input
+                    type="file"
+                    id="fotoPersonalizada"
+                    accept="image/*"
+                    onchange="mostrarFotoPersonalizada(event)">
+
+            </div>
+
+
+            <img
+                id="previewFoto"
+                class="preview-foto"
+                alt="Vista previa">
+
+
+            <button
+                class="btn-enviar-personalizacion"
+                onclick="enviarPersonalizacion()">
+
+                ✨ Solicitar cotización por WhatsApp
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CARRITO
+    ========================== -->
+
+    <aside id="carritoPanel" class="carrito-panel">
+
+        <div class="carrito-header">
+
+            <h2>Mi carrito</h2>
+
+            <button
+                class="cerrar-carrito"
+                onclick="cerrarCarrito()">
+
+                ×
+
+            </button>
+
+        </div>
+
+
+        <div
+            id="carritoItems"
+            class="carrito-items">
+
+        </div>
+
+
+        <div class="carrito-footer">
+
+            <div class="total">
+
+                <span>Total</span>
+
+                <span id="totalCarrito">
+                    $0
+                </span>
+
+            </div>
+
+
+            <button
+                class="btn-whatsapp"
+                onclick="enviarCarritoWhatsApp()">
+
+                💬 Solicitar cotización por WhatsApp
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         BOTONES FLOTANTES
+    ========================== -->
+
+    <button
+        class="boton-personalizar"
+        onclick="mostrarPersonalizador()">
+
+        ✨ ¿Quieres personalizar tu torta?
+
+    </button>
+
+
+    <button
+        class="boton-carrito"
+        onclick="abrirCarrito()">
+
+        🛒
+
+        <span
+            id="contadorCarrito"
+            class="contador-carrito">
+
+            0
+
+        </span>
+
+    </button>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <h2>Emita Repostería</h2>
+
+        <p>
+            Momentos dulces que merecen ser celebrados.
+        </p>
+
+    </footer>
+
+
+<script>
+
+/* =====================================================
+   CONFIGURACIÓN
+===================================================== */
+
+/*
+    CAMBIA ESTE NÚMERO POR EL WHATSAPP REAL DE EMITA.
+
+    Ejemplo Colombia:
+    573001234567
+*/
+
+const NUMERO_WHATSAPP = "573207036848";
+
+
+/*
+    Si tu página de GitHub Pages tiene una dirección
+    específica, puedes colocarla aquí.
+
+    EJEMPLO:
+
+    https://usuario.github.io/emita-reposteria/
+
+    Déjalo vacío si todavía no tienes la dirección.
+*/
+
+const URL_SITIO = "";
+
+
+/* =====================================================
+   CATEGORIAS
+===================================================== */
+
+const categorias = {
+
+    bodas: {
+
+        nombre: "Bodas",
+
+        descripcion:
+            "Diseños elegantes para un día inolvidable.",
+
+        carpeta: "bodas",
+
+        prefijo: "BOD"
+
+    },
+
+
+    bautizos: {
+
+        nombre: "Bautizos",
+
+        descripcion:
+            "Diseños delicados para un día muy especial.",
+
+        carpeta: "bautizos",
+
+        prefijo: "BAU"
+
+    },
+
+
+    baby: {
+
+        nombre:
+            "Baby shower y revelación",
+
+        descripcion:
+            "Diseños dulces para momentos inolvidables.",
+
+        carpeta: "baby",
+
+        prefijo: "BAB"
+
+    },
+
+
+    infantiles: {
+
+        nombre:
+            "Infantiles",
+
+        descripcion:
+            "Color, personajes y diversión.",
+
+        carpeta: "infantiles",
+
+        prefijo: "INF"
+
+    },
+
+
+    "50": {
+
+        nombre:
+            "50 años y más...",
+
+        descripcion:
+            "Celebraciones que merecen algo especial.",
+
+        carpeta: "50-anos",
+
+        prefijo: "50A"
+
+    },
+
+
+    grados: {
+
+        nombre:
+            "Grados",
+
+        descripcion:
+            "Celebra todo lo que has logrado.",
+
+        carpeta: "grados",
+
+        prefijo: "GRA"
+
+    },
+
+
+    caballeros: {
+
+        nombre:
+            "Caballeros",
+
+        descripcion:
+            "Diseños especiales para celebrar.",
+
+        carpeta: "caballeros",
+
+        prefijo: "CAB"
+
+    },
+
+
+    tendencias: {
+
+        nombre:
+            "Tendencias",
+
+        descripcion:
+            "Los diseños y estilos que están marcando tendencia.",
+
+        carpeta: "tendencias",
+
+        prefijo: "TEN"
+
+    },
+
+
+    personalizadas: {
+
+        nombre:
+            "Personalizadas",
+
+        descripcion:
+            "Una torta creada especialmente para ti.",
+
+        carpeta: "personalizadas",
+
+        prefijo: "PER"
+
+    },
+
+
+    mini: {
+
+        nombre:
+            "Mini Cake",
+
+        descripcion:
+            "Pequeñas, delicadas y especiales.",
+
+        carpeta: "mini",
+
+        prefijo: "MINI"
+
+    }
+
+};
+
+/* =====================================================
+   PORCIONES Y PRECIOS
+===================================================== */
+
+const porciones = [
+
+    {
+        nombre: "10 a 12 porciones",
+        precio: 120000
+    },
+
+    {
+        nombre: "15 porciones",
+        precio: 130000
+    },
+
+    {
+        nombre: "20 a 25 porciones",
+        precio: 140000
+    }
+
+];
+
+
+/* =====================================================
+   SABORES
+===================================================== */
+
+const sabores = [
+
+    {
+        nombre: "Vainilla - Frutos rojos",
+        extra: 8000
+    },
+
+    {
+        nombre: "Vainilla - Arequipe",
+        extra: 8000
+    },
+
+    {
+        nombre: "Vainilla - Maracuyá",
+        extra: 8000
+    },
+
+    {
+        nombre: "Vainilla - Chocolate",
+        extra: 8000
+    },
+
+    {
+        nombre: "Chocolate - Frutos rojos",
+        extra: 8000
+    },
+
+    {
+        nombre: "Chocolate - Arequipe",
+        extra: 8000
+    },
+
+    {
+        nombre: "Chocolate - Maracuyá",
+        extra: 8000
+    },
+
+    {
+        nombre: "Chocolate - Chocolate",
+        extra: 8000
+    },
+
+    {
+        nombre: "Chocolate - Oreo",
+        extra: 8000
+    }
+
+];
+
+
+/* =====================================================
+   CARRITO
+===================================================== */
+
+let carrito = [];
+
+
+/* =====================================================
+   FORMATO DE PRECIO
+===================================================== */
+
+function formatoPrecio(valor) {
+
+    return new Intl.NumberFormat("es-CO", {
+        style: "currency",
+        currency: "COP",
+        maximumFractionDigits: 0
+    }).format(valor);
+
+}
+
+
+/* =====================================================
+   ABRIR CATEGORIA
+===================================================== */
+
+function abrirCategoria(categoria) {
+
+    document.getElementById("inicio").style.display = "none";
+
+    document.getElementById("personalizador")
+        .classList.remove("activo");
+
+    document.getElementById("vistaCategoria").style.display = "block";
+
+    const datos = categorias[categoria];
+
+    document.getElementById("nombreCategoria").textContent =
+        datos.nombre;
+
+    document.getElementById("descripcionCategoria").textContent =
+        datos.descripcion;
+
+    generarTortas(categoria);
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+}
+
+/* =========================================================
+   IMÁGENES DE LAS TORTAS
+   =========================================================
+
+   AQUÍ PUEDES CAMBIAR LAS IMÁGENES MANUALMENTE.
+
+   NO tienes que renombrar los archivos.
+
+   Solo cambia la ruta que está entre comillas.
+
+========================================================= */
+
+
+const imagenesTortas = {
+
+    bautizos: [
+
+    "bautizos/bautizo2  (1).jpeg",
+
+    "bautizos/bautizo2  (2).jpeg",
+
+    "bautizos/bautizo2  (3).jpeg",
+
+    "bautizos/bautizo2  (4).jpeg",
+
+    "bautizos/bautizo2  (5).jpeg",
+
+    "bautizos/bautizo2  (6).jpeg",
+
+    "bautizos/bautizo2  (7).jpeg",
+
+    "bautizos/bautizo2  (8).jpeg",
+
+    "bautizos/bautizo2  (9).jpeg",
+
+    "bautizos/bautizo2  (10).jpeg",
+
+    "bautizos/bautizo2  (11).jpeg",
+
+    "bautizos/bautizo2  (12).jpeg",
+
+    "bautizos/bautizo2  (13).jpeg",
+
+    "bautizos/bautizo2  (14).jpeg",
+
+    "bautizos/bautizo2  (15).jpeg",
+
+    "bautizos/bautizo2  (16).jpeg",
+
+    "bautizos/bautizo2  (17).jpeg",
+
+    "bautizos/bautizo2  (18).jpeg",
+
+    "bautizos/bautizo2  (19).jpeg",
+
+    "bautizos/bautizo2  (20).jpeg",
+
+    "bautizos/bautizo2  (21).jpeg",
+
+    "bautizos/bautizo2  (22).jpeg",
+
+    "bautizos/bautizo2  (23).jpeg",
+
+    "bautizos/bautizo2  (24).jpeg",
+
+    "bautizos/bautizo2  (25).jpeg",
+
+    "bautizos/bautizo2  (26).jpeg",
+
+    "bautizos/bautizo2  (27).jpeg",
+
+    "bautizos/bautizo2  (28).jpeg",
+
+    "bautizos/bautizo2  (29).jpeg",
+
+    "bautizos/bautizo2  (30).jpeg",
+
+    "bautizos/bautizo2  (31).jpeg",
+
+    "bautizos/bautizo2  (32).jpeg",
+
+    "bautizos/bautizo2  (33).jpeg",
+
+    "bautizos/bautizo2  (34).jpeg",
+
+    "bautizos/bautizo2  (35).jpeg",
+
+    "bautizos/bautizo2  (36).jpeg",
+
+    "bautizos/bautizo2  (37).jpeg",
+
+    "bautizos/bautizo2  (38).jpeg",
+
+    "bautizos/bautizo2  (39).jpeg",
+
+    "bautizos/bautizo2  (40).jpeg",
+
+    "bautizos/bautizo2  (41).jpeg",
+
+    "bautizos/bautizo2  (42).jpeg",
+
+    "bautizos/bautizo2  (43).jpeg",
+
+    "bautizos/bautizo2  (44).jpeg",
+
+    "bautizos/bautizo2  (46).jpeg",
+
+    "bautizos/bautizo2  (46).jpeg",
+
+    "bautizos/bautizo2  (47).jpeg",
+
+    "bautizos/bautizo2  (48).jpeg",
+
+    "bautizos/bautizo2  (3).jpeg",
+
+    "bautizos/bautizo2  (3).jpeg"
+
+],
+
+    /* =====================================================
+       BODAS
+    ===================================================== */
+
+    bodas: [
+
+        "imagenes/tortas/bodas/boda-elegante.jpg",
+        "imagenes/tortas/bodas/boda-dorada.png",
+        "imagenes/tortas/bodas/matrimonio-flores.jpg",
+        "imagenes/tortas/bodas/boda-blanca.jpg",
+        "imagenes/tortas/bodas/boda-rosada.png",
+
+        "imagenes/tortas/bodas/boda-perlas.jpg",
+        "imagenes/tortas/bodas/boda-flores.jpg",
+        "imagenes/tortas/bodas/boda-minimalista.jpg",
+        "imagenes/tortas/bodas/boda-romantica.png",
+        "imagenes/tortas/bodas/boda-cascada.jpg",
+
+        "imagenes/tortas/bodas/boda-10.jpg",
+        "imagenes/tortas/bodas/boda-11.jpg",
+        "imagenes/tortas/bodas/boda-12.jpg",
+        "imagenes/tortas/bodas/boda-13.jpg",
+        "imagenes/tortas/bodas/boda-14.jpg",
+
+        "imagenes/tortas/bodas/boda-15.jpg",
+        "imagenes/tortas/bodas/boda-16.jpg",
+        "imagenes/tortas/bodas/boda-17.jpg",
+        "imagenes/tortas/bodas/boda-18.jpg",
+        "imagenes/tortas/bodas/boda-19.jpg",
+
+        "imagenes/tortas/bodas/boda-20.jpg",
+        "imagenes/tortas/bodas/boda-21.jpg",
+        "imagenes/tortas/bodas/boda-22.jpg",
+        "imagenes/tortas/bodas/boda-23.jpg",
+        "imagenes/tortas/bodas/boda-24.jpg",
+
+        "imagenes/tortas/bodas/boda-25.jpg",
+        "imagenes/tortas/bodas/boda-26.jpg",
+        "imagenes/tortas/bodas/boda-27.jpg",
+        "imagenes/tortas/bodas/boda-28.jpg",
+        "imagenes/tortas/bodas/boda-29.jpg",
+
+        "imagenes/tortas/bodas/boda-30.jpg",
+        "imagenes/tortas/bodas/boda-31.jpg",
+        "imagenes/tortas/bodas/boda-32.jpg",
+        "imagenes/tortas/bodas/boda-33.jpg",
+        "imagenes/tortas/bodas/boda-34.jpg",
+
+        "imagenes/tortas/bodas/boda-35.jpg",
+        "imagenes/tortas/bodas/boda-36.jpg",
+        "imagenes/tortas/bodas/boda-37.jpg",
+        "imagenes/tortas/bodas/boda-38.jpg",
+        "imagenes/tortas/bodas/boda-39.jpg",
+
+        "imagenes/tortas/bodas/boda-40.jpg",
+        "imagenes/tortas/bodas/boda-41.jpg",
+        "imagenes/tortas/bodas/boda-42.jpg",
+        "imagenes/tortas/bodas/boda-43.jpg",
+        "imagenes/tortas/bodas/boda-44.jpg",
+
+        "imagenes/tortas/bodas/boda-45.jpg",
+        "imagenes/tortas/bodas/boda-46.jpg",
+        "imagenes/tortas/bodas/boda-47.jpg",
+        "imagenes/tortas/bodas/boda-48.jpg",
+        "imagenes/tortas/bodas/boda-49.jpg",
+
+        "imagenes/tortas/bodas/boda-50.jpg"
+
+    ],
+
+
+
+    /* =====================================================
+       BABY SHOWER
+    ===================================================== */
+
+    baby: [
+
+        "imagenes/tortas/baby/ositos.jpg",
+        "imagenes/tortas/baby/rosado-baby.png",
+        "imagenes/tortas/baby/azul-nubes.jpg",
+        "imagenes/tortas/baby/revelacion.jpg",
+        "imagenes/tortas/baby/baby-elefante.jpg",
+
+        "imagenes/tortas/baby/baby-arcoiris.jpg",
+        "imagenes/tortas/baby/baby-angel.jpg",
+        "imagenes/tortas/baby/baby-nubes.png",
+        "imagenes/tortas/baby/baby-estrellas.jpg",
+        "imagenes/tortas/baby/baby-conejito.jpg",
+
+        "imagenes/tortas/baby/baby-11.jpg",
+        "imagenes/tortas/baby/baby-12.jpg",
+        "imagenes/tortas/baby/baby-13.jpg",
+        "imagenes/tortas/baby/baby-14.jpg",
+        "imagenes/tortas/baby/baby-15.jpg",
+
+        "imagenes/tortas/baby/baby-16.jpg",
+        "imagenes/tortas/baby/baby-17.jpg",
+        "imagenes/tortas/baby/baby-18.jpg",
+        "imagenes/tortas/baby/baby-19.jpg",
+        "imagenes/tortas/baby/baby-20.jpg",
+
+        "imagenes/tortas/baby/baby-21.jpg",
+        "imagenes/tortas/baby/baby-22.jpg",
+        "imagenes/tortas/baby/baby-23.jpg",
+        "imagenes/tortas/baby/baby-24.jpg",
+        "imagenes/tortas/baby/baby-25.jpg",
+
+        "imagenes/tortas/baby/baby-26.jpg",
+        "imagenes/tortas/baby/baby-27.jpg",
+        "imagenes/tortas/baby/baby-28.jpg",
+        "imagenes/tortas/baby/baby-29.jpg",
+        "imagenes/tortas/baby/baby-30.jpg",
+
+        "imagenes/tortas/baby/baby-31.jpg",
+        "imagenes/tortas/baby/baby-32.jpg",
+        "imagenes/tortas/baby/baby-33.jpg",
+        "imagenes/tortas/baby/baby-34.jpg",
+        "imagenes/tortas/baby/baby-35.jpg",
+
+        "imagenes/tortas/baby/baby-36.jpg",
+        "imagenes/tortas/baby/baby-37.jpg",
+        "imagenes/tortas/baby/baby-38.jpg",
+        "imagenes/tortas/baby/baby-39.jpg",
+        "imagenes/tortas/baby/baby-40.jpg",
+
+        "imagenes/tortas/baby/baby-41.jpg",
+        "imagenes/tortas/baby/baby-42.jpg",
+        "imagenes/tortas/baby/baby-43.jpg",
+        "imagenes/tortas/baby/baby-44.jpg",
+        "imagenes/tortas/baby/baby-45.jpg",
+
+        "imagenes/tortas/baby/baby-46.jpg",
+        "imagenes/tortas/baby/baby-47.jpg",
+        "imagenes/tortas/baby/baby-48.jpg",
+        "imagenes/tortas/baby/baby-49.jpg",
+        "imagenes/tortas/baby/baby-50.jpg"
+
+    ],
+
+
+
+    /* =====================================================
+       INFANTILES
+    ===================================================== */
+
+    infantiles: [
+
+        "imagenes/tortas/infantiles/barbie.jpg",
+        "imagenes/tortas/infantiles/spiderman.png",
+        "imagenes/tortas/infantiles/princesa.jpg",
+        "imagenes/tortas/infantiles/dinosaurio.jpg",
+        "imagenes/tortas/infantiles/mickey.jpg",
+
+        "imagenes/tortas/infantiles/minnie.jpg",
+        "imagenes/tortas/infantiles/futbol.jpg",
+        "imagenes/tortas/infantiles/unicornio.jpg",
+        "imagenes/tortas/infantiles/hello-kitty.jpg",
+        "imagenes/tortas/infantiles/carros.jpg",
+
+        "imagenes/tortas/infantiles/infantil-11.jpg",
+        "imagenes/tortas/infantiles/infantil-12.jpg",
+        "imagenes/tortas/infantiles/infantil-13.jpg",
+        "imagenes/tortas/infantiles/infantil-14.jpg",
+        "imagenes/tortas/infantiles/infantil-15.jpg",
+
+        "imagenes/tortas/infantiles/infantil-16.jpg",
+        "imagenes/tortas/infantiles/infantil-17.jpg",
+        "imagenes/tortas/infantiles/infantil-18.jpg",
+        "imagenes/tortas/infantiles/infantil-19.jpg",
+        "imagenes/tortas/infantiles/infantil-20.jpg",
+
+        "imagenes/tortas/infantiles/infantil-21.jpg",
+        "imagenes/tortas/infantiles/infantil-22.jpg",
+        "imagenes/tortas/infantiles/infantil-23.jpg",
+        "imagenes/tortas/infantiles/infantil-24.jpg",
+        "imagenes/tortas/infantiles/infantil-25.jpg",
+
+        "imagenes/tortas/infantiles/infantil-26.jpg",
+        "imagenes/tortas/infantiles/infantil-27.jpg",
+        "imagenes/tortas/infantiles/infantil-28.jpg",
+        "imagenes/tortas/infantiles/infantil-29.jpg",
+        "imagenes/tortas/infantiles/infantil-30.jpg",
+
+        "imagenes/tortas/infantiles/infantil-31.jpg",
+        "imagenes/tortas/infantiles/infantil-32.jpg",
+        "imagenes/tortas/infantiles/infantil-33.jpg",
+        "imagenes/tortas/infantiles/infantil-34.jpg",
+        "imagenes/tortas/infantiles/infantil-35.jpg",
+
+        "imagenes/tortas/infantiles/infantil-36.jpg",
+        "imagenes/tortas/infantiles/infantil-37.jpg",
+        "imagenes/tortas/infantiles/infantil-38.jpg",
+        "imagenes/tortas/infantiles/infantil-39.jpg",
+        "imagenes/tortas/infantiles/infantil-40.jpg",
+
+        "imagenes/tortas/infantiles/infantil-41.jpg",
+        "imagenes/tortas/infantiles/infantil-42.jpg",
+        "imagenes/tortas/infantiles/infantil-43.jpg",
+        "imagenes/tortas/infantiles/infantil-44.jpg",
+        "imagenes/tortas/infantiles/infantil-45.jpg",
+
+        "imagenes/tortas/infantiles/infantil-46.jpg",
+        "imagenes/tortas/infantiles/infantil-47.jpg",
+        "imagenes/tortas/infantiles/infantil-48.jpg",
+        "imagenes/tortas/infantiles/infantil-49.jpg",
+        "imagenes/tortas/infantiles/infantil-50.jpg"
+
+    ],
+
+
+
+    /* =====================================================
+       50 AÑOS
+    ===================================================== */
+
+    "50": [
+
+        "imagenes/tortas/50-anos/50-elegante.jpg",
+        "imagenes/tortas/50-anos/dorada.jpg",
+        "imagenes/tortas/50-anos/negra-dorada.jpg",
+        "imagenes/tortas/50-anos/flores.jpg",
+        "imagenes/tortas/50-anos/celebracion.jpg",
+
+        "imagenes/tortas/50-anos/50-06.jpg",
+        "imagenes/tortas/50-anos/50-07.jpg",
+        "imagenes/tortas/50-anos/50-08.jpg",
+        "imagenes/tortas/50-anos/50-09.jpg",
+        "imagenes/tortas/50-anos/50-10.jpg",
+
+        "imagenes/tortas/50-anos/50-11.jpg",
+        "imagenes/tortas/50-anos/50-12.jpg",
+        "imagenes/tortas/50-anos/50-13.jpg",
+        "imagenes/tortas/50-anos/50-14.jpg",
+        "imagenes/tortas/50-anos/50-15.jpg",
+
+        "imagenes/tortas/50-anos/50-16.jpg",
+        "imagenes/tortas/50-anos/50-17.jpg",
+        "imagenes/tortas/50-anos/50-18.jpg",
+        "imagenes/tortas/50-anos/50-19.jpg",
+        "imagenes/tortas/50-anos/50-20.jpg",
+
+        "imagenes/tortas/50-anos/50-21.jpg",
+        "imagenes/tortas/50-anos/50-22.jpg",
+        "imagenes/tortas/50-anos/50-23.jpg",
+        "imagenes/tortas/50-anos/50-24.jpg",
+        "imagenes/tortas/50-anos/50-25.jpg",
+
+        "imagenes/tortas/50-anos/50-26.jpg",
+        "imagenes/tortas/50-anos/50-27.jpg",
+        "imagenes/tortas/50-anos/50-28.jpg",
+        "imagenes/tortas/50-anos/50-29.jpg",
+        "imagenes/tortas/50-anos/50-30.jpg",
+
+        "imagenes/tortas/50-anos/50-31.jpg",
+        "imagenes/tortas/50-anos/50-32.jpg",
+        "imagenes/tortas/50-anos/50-33.jpg",
+        "imagenes/tortas/50-anos/50-34.jpg",
+        "imagenes/tortas/50-anos/50-35.jpg",
+
+        "imagenes/tortas/50-anos/50-36.jpg",
+        "imagenes/tortas/50-anos/50-37.jpg",
+        "imagenes/tortas/50-anos/50-38.jpg",
+        "imagenes/tortas/50-anos/50-39.jpg",
+        "imagenes/tortas/50-anos/50-40.jpg",
+
+        "imagenes/tortas/50-anos/50-41.jpg",
+        "imagenes/tortas/50-anos/50-42.jpg",
+        "imagenes/tortas/50-anos/50-43.jpg",
+        "imagenes/tortas/50-anos/50-44.jpg",
+        "imagenes/tortas/50-anos/50-45.jpg",
+
+        "imagenes/tortas/50-anos/50-46.jpg",
+        "imagenes/tortas/50-anos/50-47.jpg",
+        "imagenes/tortas/50-anos/50-48.jpg",
+        "imagenes/tortas/50-anos/50-49.jpg",
+        "imagenes/tortas/50-anos/50-50.jpg"
+
+    ],
+
+
+
+    /* =====================================================
+       GRADOS
+    ===================================================== */
+
+    grados: [
+
+        "imagenes/tortas/grados/grado-elegante.jpg",
+        "imagenes/tortas/grados/universidad.jpg",
+        "imagenes/tortas/grados/bachiller.jpg",
+        "imagenes/tortas/grados/dorado.jpg",
+        "imagenes/tortas/grados/graduacion.jpg",
+
+        "imagenes/tortas/grados/grado-06.jpg",
+        "imagenes/tortas/grados/grado-07.jpg",
+        "imagenes/tortas/grados/grado-08.jpg",
+        "imagenes/tortas/grados/grado-09.jpg",
+        "imagenes/tortas/grados/grado-10.jpg",
+
+        "imagenes/tortas/grados/grado-11.jpg",
+        "imagenes/tortas/grados/grado-12.jpg",
+        "imagenes/tortas/grados/grado-13.jpg",
+        "imagenes/tortas/grados/grado-14.jpg",
+        "imagenes/tortas/grados/grado-15.jpg",
+
+        "imagenes/tortas/grados/grado-16.jpg",
+        "imagenes/tortas/grados/grado-17.jpg",
+        "imagenes/tortas/grados/grado-18.jpg",
+        "imagenes/tortas/grados/grado-19.jpg",
+        "imagenes/tortas/grados/grado-20.jpg",
+
+        "imagenes/tortas/grados/grado-21.jpg",
+        "imagenes/tortas/grados/grado-22.jpg",
+        "imagenes/tortas/grados/grado-23.jpg",
+        "imagenes/tortas/grados/grado-24.jpg",
+        "imagenes/tortas/grados/grado-25.jpg",
+
+        "imagenes/tortas/grados/grado-26.jpg",
+        "imagenes/tortas/grados/grado-27.jpg",
+        "imagenes/tortas/grados/grado-28.jpg",
+        "imagenes/tortas/grados/grado-29.jpg",
+        "imagenes/tortas/grados/grado-30.jpg",
+
+        "imagenes/tortas/grados/grado-31.jpg",
+        "imagenes/tortas/grados/grado-32.jpg",
+        "imagenes/tortas/grados/grado-33.jpg",
+        "imagenes/tortas/grados/grado-34.jpg",
+        "imagenes/tortas/grados/grado-35.jpg",
+
+        "imagenes/tortas/grados/grado-36.jpg",
+        "imagenes/tortas/grados/grado-37.jpg",
+        "imagenes/tortas/grados/grado-38.jpg",
+        "imagenes/tortas/grados/grado-39.jpg",
+        "imagenes/tortas/grados/grado-40.jpg",
+
+        "imagenes/tortas/grados/grado-41.jpg",
+        "imagenes/tortas/grados/grado-42.jpg",
+        "imagenes/tortas/grados/grado-43.jpg",
+        "imagenes/tortas/grados/grado-44.jpg",
+        "imagenes/tortas/grados/grado-45.jpg",
+
+        "imagenes/tortas/grados/grado-46.jpg",
+        "imagenes/tortas/grados/grado-47.jpg",
+        "imagenes/tortas/grados/grado-48.jpg",
+        "imagenes/tortas/grados/grado-49.jpg",
+        "imagenes/tortas/grados/grado-50.jpg"
+
+    ],
+
+
+
+    tendencias: [
+
+    "imagenes/tortas/tendencias/tendencia elegante.jpg",
+
+    "imagenes/tortas/tendencias/torta vintage.jpg",
+
+    "imagenes/tortas/tendencias/cake heart.jpg",
+
+    "imagenes/tortas/tendencias/torta minimalista.jpg",
+
+    "imagenes/tortas/tendencias/torta coquette.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-06.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-07.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-08.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-09.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-10.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-11.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-12.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-13.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-14.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-15.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-16.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-17.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-18.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-19.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-20.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-21.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-22.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-23.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-24.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-25.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-26.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-27.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-28.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-29.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-30.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-31.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-32.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-33.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-34.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-35.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-36.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-37.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-38.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-39.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-40.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-41.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-42.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-43.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-44.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-45.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-46.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-47.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-48.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-49.jpg",
+
+    "imagenes/tortas/tendencias/tendencia-50.jpg"
+
+],
+
+    /* =====================================================
+       CABALLEROS
+    ===================================================== */
+
+    caballeros: [
+
+        "imagenes/tortas/caballeros/cerveza.jpg",
+        "imagenes/tortas/caballeros/futbol.jpg",
+        "imagenes/tortas/caballeros/carros.jpg",
+        "imagenes/tortas/caballeros/negra.jpg",
+        "imagenes/tortas/caballeros/elegante.jpg",
+
+        "imagenes/tortas/caballeros/hombre-06.jpg",
+        "imagenes/tortas/caballeros/hombre-07.jpg",
+        "imagenes/tortas/caballeros/hombre-08.jpg",
+        "imagenes/tortas/caballeros/hombre-09.jpg",
+        "imagenes/tortas/caballeros/hombre-10.jpg",
+
+        "imagenes/tortas/caballeros/hombre-11.jpg",
+        "imagenes/tortas/caballeros/hombre-12.jpg",
+        "imagenes/tortas/caballeros/hombre-13.jpg",
+        "imagenes/tortas/caballeros/hombre-14.jpg",
+        "imagenes/tortas/caballeros/hombre-15.jpg",
+
+        "imagenes/tortas/caballeros/hombre-16.jpg",
+        "imagenes/tortas/caballeros/hombre-17.jpg",
+        "imagenes/tortas/caballeros/hombre-18.jpg",
+        "imagenes/tortas/caballeros/hombre-19.jpg",
+        "imagenes/tortas/caballeros/hombre-20.jpg",
+
+        "imagenes/tortas/caballeros/hombre-21.jpg",
+        "imagenes/tortas/caballeros/hombre-22.jpg",
+        "imagenes/tortas/caballeros/hombre-23.jpg",
+        "imagenes/tortas/caballeros/hombre-24.jpg",
+        "imagenes/tortas/caballeros/hombre-25.jpg",
+
+        "imagenes/tortas/caballeros/hombre-26.jpg",
+        "imagenes/tortas/caballeros/hombre-27.jpg",
+        "imagenes/tortas/caballeros/hombre-28.jpg",
+        "imagenes/tortas/caballeros/hombre-29.jpg",
+        "imagenes/tortas/caballeros/hombre-30.jpg",
+
+        "imagenes/tortas/caballeros/hombre-31.jpg",
+        "imagenes/tortas/caballeros/hombre-32.jpg",
+        "imagenes/tortas/caballeros/hombre-33.jpg",
+        "imagenes/tortas/caballeros/hombre-34.jpg",
+        "imagenes/tortas/caballeros/hombre-35.jpg",
+
+        "imagenes/tortas/caballeros/hombre-36.jpg",
+        "imagenes/tortas/caballeros/hombre-37.jpg",
+        "imagenes/tortas/caballeros/hombre-38.jpg",
+        "imagenes/tortas/caballeros/hombre-39.jpg",
+        "imagenes/tortas/caballeros/hombre-40.jpg",
+
+        "imagenes/tortas/caballeros/hombre-41.jpg",
+        "imagenes/tortas/caballeros/hombre-42.jpg",
+        "imagenes/tortas/caballeros/hombre-43.jpg",
+        "imagenes/tortas/caballeros/hombre-44.jpg",
+        "imagenes/tortas/caballeros/hombre-45.jpg",
+
+        "imagenes/tortas/caballeros/hombre-46.jpg",
+        "imagenes/tortas/caballeros/hombre-47.jpg",
+        "imagenes/tortas/caballeros/hombre-48.jpg",
+        "imagenes/tortas/caballeros/hombre-49.jpg",
+        "imagenes/tortas/caballeros/hombre-50.jpg"
+
+    ],
+
+
+
+    /* =====================================================
+       PERSONALIZADAS
+    ===================================================== */
+
+    personalizadas: [
+
+        "imagenes/tortas/personalizadas/flor.jpg",
+        "imagenes/tortas/personalizadas/corazon.jpg",
+        "imagenes/tortas/personalizadas/dorada.jpg",
+        "imagenes/tortas/personalizadas/rosa.jpg",
+        "imagenes/tortas/personalizadas/elegante.jpg",
+
+        "imagenes/tortas/personalizadas/personalizada-06.jpg",
+        "imagenes/tortas/personalizadas/personalizada-07.jpg",
+        "imagenes/tortas/personalizadas/personalizada-08.jpg",
+        "imagenes/tortas/personalizadas/personalizada-09.jpg",
+        "imagenes/tortas/personalizadas/personalizada-10.jpg",
+
+        "imagenes/tortas/personalizadas/personalizada-11.jpg",
+        "imagenes/tortas/personalizadas/personalizada-12.jpg",
+        "imagenes/tortas/personalizadas/personalizada-13.jpg",
+        "imagenes/tortas/personalizadas/personalizada-14.jpg",
+        "imagenes/tortas/personalizadas/personalizada-15.jpg",
+
+        "imagenes/tortas/personalizadas/personalizada-16.jpg",
+        "imagenes/tortas/personalizadas/personalizada-17.jpg",
+        "imagenes/tortas/personalizadas/personalizada-18.jpg",
+        "imagenes/tortas/personalizadas/personalizada-19.jpg",
+        "imagenes/tortas/personalizadas/personalizada-20.jpg",
+
+        "imagenes/tortas/personalizadas/personalizada-21.jpg",
+        "imagenes/tortas/personalizadas/personalizada-22.jpg",
+        "imagenes/tortas/personalizadas/personalizada-23.jpg",
+        "imagenes/tortas/personalizadas/personalizada-24.jpg",
+        "imagenes/tortas/personalizadas/personalizada-25.jpg",
+
+        "imagenes/tortas/personalizadas/personalizada-26.jpg",
+        "imagenes/tortas/personalizadas/personalizada-27.jpg",
+        "imagenes/tortas/personalizadas/personalizada-28.jpg",
+        "imagenes/tortas/personalizadas/personalizada-29.jpg",
+        "imagenes/tortas/personalizadas/personalizada-30.jpg",
+
+        "imagenes/tortas/personalizadas/personalizada-31.jpg",
+        "imagenes/tortas/personalizadas/personalizada-32.jpg",
+        "imagenes/tortas/personalizadas/personalizada-33.jpg",
+        "imagenes/tortas/personalizadas/personalizada-34.jpg",
+        "imagenes/tortas/personalizadas/personalizada-35.jpg",
+
+        "imagenes/tortas/personalizadas/personalizada-36.jpg",
+        "imagenes/tortas/personalizadas/personalizada-37.jpg",
+        "imagenes/tortas/personalizadas/personalizada-38.jpg",
+        "imagenes/tortas/personalizadas/personalizada-39.jpg",
+        "imagenes/tortas/personalizadas/personalizada-40.jpg",
+
+        "imagenes/tortas/personalizadas/personalizada-41.jpg",
+        "imagenes/tortas/personalizadas/personalizada-42.jpg",
+        "imagenes/tortas/personalizadas/personalizada-43.jpg",
+        "imagenes/tortas/personalizadas/personalizada-44.jpg",
+        "imagenes/tortas/personalizadas/personalizada-45.jpg",
+
+        "imagenes/tortas/personalizadas/personalizada-46.jpg",
+        "imagenes/tortas/personalizadas/personalizada-47.jpg",
+        "imagenes/tortas/personalizadas/personalizada-48.jpg",
+        "imagenes/tortas/personalizadas/personalizada-49.jpg",
+        "imagenes/tortas/personalizadas/personalizada-50.jpg"
+
+    ],
+
+
+
+    /* =====================================================
+       MINI CAKE
+    ===================================================== */
+
+    mini: [
+
+        "imagenes/tortas/mini/mini-rosa.jpg",
+        "imagenes/tortas/mini/mini-corazon.jpg",
+        "imagenes/tortas/mini/mini-flores.jpg",
+        "imagenes/tortas/mini/mini-dorada.jpg",
+        "imagenes/tortas/mini/mini-chocolate.jpg",
+
+        "imagenes/tortas/mini/mini-06.jpg",
+        "imagenes/tortas/mini/mini-07.jpg",
+        "imagenes/tortas/mini/mini-08.jpg",
+        "imagenes/tortas/mini/mini-09.jpg",
+        "imagenes/tortas/mini/mini-10.jpg",
+
+        "imagenes/tortas/mini/mini-11.jpg",
+        "imagenes/tortas/mini/mini-12.jpg",
+        "imagenes/tortas/mini/mini-13.jpg",
+        "imagenes/tortas/mini/mini-14.jpg",
+        "imagenes/tortas/mini/mini-15.jpg",
+
+        "imagenes/tortas/mini/mini-16.jpg",
+        "imagenes/tortas/mini/mini-17.jpg",
+        "imagenes/tortas/mini/mini-18.jpg",
+        "imagenes/tortas/mini/mini-19.jpg",
+        "imagenes/tortas/mini/mini-20.jpg",
+
+        "imagenes/tortas/mini/mini-21.jpg",
+        "imagenes/tortas/mini/mini-22.jpg",
+        "imagenes/tortas/mini/mini-23.jpg",
+        "imagenes/tortas/mini/mini-24.jpg",
+        "imagenes/tortas/mini/mini-25.jpg",
+
+        "imagenes/tortas/mini/mini-26.jpg",
+        "imagenes/tortas/mini/mini-27.jpg",
+        "imagenes/tortas/mini/mini-28.jpg",
+        "imagenes/tortas/mini/mini-29.jpg",
+        "imagenes/tortas/mini/mini-30.jpg",
+
+        "imagenes/tortas/mini/mini-31.jpg",
+        "imagenes/tortas/mini/mini-32.jpg",
+        "imagenes/tortas/mini/mini-33.jpg",
+        "imagenes/tortas/mini/mini-34.jpg",
+        "imagenes/tortas/mini/mini-35.jpg",
+
+        "imagenes/tortas/mini/mini-36.jpg",
+        "imagenes/tortas/mini/mini-37.jpg",
+        "imagenes/tortas/mini/mini-38.jpg",
+        "imagenes/tortas/mini/mini-39.jpg",
+        "imagenes/tortas/mini/mini-40.jpg",
+
+        "imagenes/tortas/mini/mini-41.jpg",
+        "imagenes/tortas/mini/mini-42.jpg",
+        "imagenes/tortas/mini/mini-43.jpg",
+        "imagenes/tortas/mini/mini-44.jpg",
+        "imagenes/tortas/mini/mini-45.jpg",
+
+        "imagenes/tortas/mini/mini-46.jpg",
+        "imagenes/tortas/mini/mini-47.jpg",
+        "imagenes/tortas/mini/mini-48.jpg",
+        "imagenes/tortas/mini/mini-49.jpg",
+        "imagenes/tortas/mini/mini-50.jpg"
+
+    ]
+
+};
+
+/* GENERAR TORTAS*/
+
+function generarTortas(categoria) {
+
+    const grid = document.getElementById("tortasGrid");
+
+    grid.innerHTML = "";
+
+    const datos = categorias[categoria];
+
+    /*
+    =====================================================
+    LAS IMÁGENES DE CADA CATEGORÍA ESTÁN AQUÍ
+    =====================================================
+
+    Puedes poner cualquier nombre de archivo.
+
+    Ejemplo:
+
+    "bodas/boda-elegante.jpg"
+
+    "bodas/torta-dorada.png"
+
+    "infantiles/barbie.jpg"
+
+    NO necesitas cambiar el nombre del archivo.
+    */
+
+
+    const imagenes = imagenesTortas[categoria];
+
+
+    for (let i = 0; i < 50; i++) {
+
+        const numero =
+            String(i + 1).padStart(2, "0");
+
+
+        const referencia =
+            `${datos.prefijo}-${numero}`;
+
+
+        /*
+        AQUÍ SE TOMA AUTOMÁTICAMENTE
+        LA IMAGEN QUE PUSISTE EN LA LISTA.
+        */
+
+        const imagen =
+            imagenes[i];
+
+
+        const card =
+            document.createElement("article");
+
+
+        card.className =
+            "torta-card";
+
+
+        card.dataset.categoria =
+            categoria;
+
+
+        card.dataset.numero =
+            numero;
+
+
+        card.innerHTML = `
+
+            <div class="torta-imagen-contenedor">
+
+                <img
+                    class="imagen-torta"
+                    src="${imagen}"
+                    alt="Torta ${referencia}"
+                    onerror="imagenTortaNoEncontrada(this)"
+                >
+
+            </div>
+
+
+            <div class="torta-contenido">
+
+                <div class="referencia-torta">
+                    REF. ${referencia}
+                </div>
+
+
+                <div class="campo">
+
+                    <label>
+                        Porciones
+                    </label>
+
+                    <select
+                        class="select-porciones"
+                        onchange="actualizarPrecioTarjeta(this)"
+                    >
+
+                        ${porciones.map(
+                            (p, index) => `
+
+                            <option value="${index}">
+                                ${p.nombre}
+                            </option>
+
+                        `
+                        ).join("")}
+
+                    </select>
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label>
+                        Sabor
+                    </label>
+
+                    <select
+                        class="select-sabor"
+                        onchange="actualizarPrecioTarjeta(this)"
+                    >
+
+                        ${sabores.map(
+                            (s, index) => `
+
+                            <option value="${index}">
+                                ${s.nombre}
+                            </option>
+
+                        `
+                        ).join("")}
+
+                    </select>
+
+                </div>
+
+
+                <div class="precio-torta">
+
+                    ${formatoPrecio(
+                        porciones[0].precio +
+                        sabores[0].extra
+                    )}
+
+                </div>
+
+
+                <button
+                    class="btn-carrito"
+                    onclick="agregarDesdeTarjeta(this)"
+                >
+
+                    🛒 Agregar al carrito
+
+                </button>
+
+            </div>
+
+        `;
+
+
+        grid.appendChild(card);
+
+    }
+
+}
+
+/* =====================================================
+   IMAGEN NO ENCONTRADA
+===================================================== */
+
+function imagenNoEncontrada(imagen) {
+
+    /*
+        No cambiamos automáticamente la imagen por otra.
+
+        Esto es intencional.
+
+        Si falta:
+
+        infantiles/17.jpg
+
+        queremos que tú sepas exactamente qué archivo
+        tienes que colocar.
+    */
+
+    imagen.style.background = "#f8eeee";
+
+    imagen.style.objectFit = "contain";
+
+    imagen.alt = "Coloca aquí la imagen correspondiente";
+
+}
+
+
+/* =====================================================
+   ACTUALIZAR PRECIO
+===================================================== */
+
+function actualizarPrecioTarjeta(elemento) {
+
+    const card = elemento.closest(".torta-card");
+
+    const porcionesSelect =
+        card.querySelector(".select-porciones");
+
+    const saborSelect =
+        card.querySelector(".select-sabor");
+
+    const precio =
+        porciones[
+            Number(porcionesSelect.value)
+        ].precio
+        +
+        sabores[
+            Number(saborSelect.value)
+        ].extra;
+
+
+    card.querySelector(".precio-torta")
+        .textContent = formatoPrecio(precio);
+
+}
+
+
+/* =====================================================
+   AGREGAR DESDE TARJETA
+===================================================== */
+
+function agregarDesdeTarjeta(boton) {
+
+    const card =
+        boton.closest(".torta-card");
+
+
+    const categoria =
+        card.dataset.categoria;
+
+    const numero =
+        card.dataset.numero;
+
+
+    const datos =
+        categorias[categoria];
+
+
+    const porcionesSeleccionadas =
+        porciones[
+            Number(
+                card.querySelector(".select-porciones").value
+            )
+        ];
+
+
+    const saborSeleccionado =
+        sabores[
+            Number(
+                card.querySelector(".select-sabor").value
+            )
+        ];
+
+
+    const precio =
+        porcionesSeleccionadas.precio
+        +
+        saborSeleccionado.extra;
+
+
+    const referencia =
+        `${datos.prefijo}-${numero}`;
+
+
+    const imagen =
+    imagenesTortas[categoria][Number(numero) - 1];
+
+
+    /*
+        Si ya existe exactamente la misma combinación,
+        aumentamos la cantidad.
+    */
+
+    const existente =
+        carrito.find(item =>
+            item.referencia === referencia &&
+            item.porciones === porcionesSeleccionadas.nombre &&
+            item.sabor === saborSeleccionado.nombre
+        );
+
+
+    if (existente) {
+
+        existente.cantidad++;
+
+    } else {
+
+        carrito.push({
+
+            referencia: referencia,
+
+            categoria: datos.nombre,
+
+            categoriaCodigo: categoria,
+
+            numero: numero,
+
+            imagen: imagen,
+
+            porciones: porcionesSeleccionadas.nombre,
+
+            sabor: saborSeleccionado.nombre,
+
+            precio: precio,
+
+            cantidad: 1
+
+        });
+
+    }
+
+
+    actualizarCarrito();
+
+    abrirCarrito();
+
+}
+
+
+/* =====================================================
+   ACTUALIZAR CARRITO
+===================================================== */
+
+function actualizarCarrito() {
+
+    const contenedor =
+        document.getElementById("carritoItems");
+
+    const contador =
+        document.getElementById("contadorCarrito");
+
+    const totalElemento =
+        document.getElementById("totalCarrito");
+
+
+    if (carrito.length === 0) {
+
+        contenedor.innerHTML = `
+
+            <div class="carrito-vacio">
+
+                <div style="font-size:50px;">
+                    🧁
+                </div>
+
+                <p>
+                    Tu carrito está vacío.
+                </p>
+
+                <br>
+
+                <small>
+                    Agrega una torta para comenzar.
+                </small>
+
+            </div>
+
+        `;
+
+        contador.textContent = "0";
+
+        totalElemento.textContent =
+            formatoPrecio(0);
+
+        return;
+
+    }
+
+
+    let total = 0;
+
+    let cantidadTotal = 0;
+
+
+    contenedor.innerHTML = "";
+
+
+    carrito.forEach((item, index) => {
+
+        total +=
+            item.precio *
+            item.cantidad;
+
+        cantidadTotal +=
+            item.cantidad;
+
+
+        const div =
+            document.createElement("div");
+
+        div.className =
+            "item-carrito";
+
+
+        div.innerHTML = `
+
+            <img
+                src="${item.imagen}"
+                alt="${item.referencia}"
+                onerror="imagenNoEncontrada(this)">
+
+
+            <div class="item-info">
+
+                <h4>
+                    ${item.referencia}
+                </h4>
+
+                <p>
+                    ${item.categoria}
+                </p>
+
+                <p>
+                    ${item.porciones}
+                </p>
+
+                <p>
+                    ${item.sabor}
+                </p>
+
+                <p>
+                    Cantidad: ${item.cantidad}
+                </p>
+
+
+                <button
+                    class="btn-eliminar"
+                    onclick="eliminarDelCarrito(${index})">
+
+                    🗑 Eliminar
+
+                </button>
+
+            </div>
+
+
+            <div class="item-precio">
+
+                ${formatoPrecio(
+                    item.precio *
+                    item.cantidad
+                )}
+
+            </div>
+
+        `;
+
+
+        contenedor.appendChild(div);
+
+    });
+
+
+    contador.textContent =
+        cantidadTotal;
+
+
+    totalElemento.textContent =
+        formatoPrecio(total);
+
+}
+
+
+/* =====================================================
+   ELIMINAR DEL CARRITO
+===================================================== */
+
+function eliminarDelCarrito(index) {
+
+    carrito.splice(index, 1);
+
+    actualizarCarrito();
+
+}
+
+
+/* =====================================================
+   ABRIR CARRITO
+===================================================== */
+
+function abrirCarrito() {
+
+    document.getElementById("carritoPanel")
+        .classList.add("abierto");
+
+}
+
+
+/* =====================================================
+   CERRAR CARRITO
+===================================================== */
+
+function cerrarCarrito() {
+
+    document.getElementById("carritoPanel")
+        .classList.remove("abierto");
+
+}
+
+
+/* =====================================================
+   WHATSAPP DEL CARRITO
+===================================================== */
+
+function enviarCarritoWhatsApp() {
+
+    if (carrito.length === 0) {
+
+        alert(
+            "Primero agrega una torta al carrito."
+        );
+
+        return;
+
+    }
+
+
+    let mensaje =
+        "🍰 *COTIZACIÓN - EMITA REPOSTERÍA*%0A%0A";
+
+
+    let total = 0;
+
+
+    carrito.forEach((item, index) => {
+
+        const subtotal =
+            item.precio *
+            item.cantidad;
+
+
+        total += subtotal;
+
+
+        mensaje +=
+
+            `🍰 *TORTA ${index + 1}*%0A` +
+
+            `Referencia: ${item.referencia}%0A` +
+
+            `Categoría: ${item.categoria}%0A` +
+
+            `Porciones: ${item.porciones}%0A` +
+
+            `Sabor: ${item.sabor}%0A` +
+
+            `Cantidad: ${item.cantidad}%0A` +
+
+            `Precio: ${formatoPrecio(item.precio)}%0A` +
+
+            `Subtotal: ${formatoPrecio(subtotal)}%0A`;
+
+
+        /*
+            Si URL_SITIO está configurada,
+            enviamos el enlace directo.
+        */
+
+        if (URL_SITIO) {
+
+            const enlace =
+                `${URL_SITIO}?torta=${item.categoriaCodigo}-${item.numero}`;
+
+            mensaje +=
+                `Ver diseño: ${enlace}%0A`;
+
+        }
+
+
+        mensaje += "%0A";
+
+    });
+
+
+    mensaje +=
+
+        `💰 *TOTAL: ${formatoPrecio(total)}*%0A%0A` +
+
+        "✨ Los valores son una referencia y la confirmación final " +
+
+        "será realizada por Emita Repostería.";
+
+
+    const url =
+        `https://wa.me/${NUMERO_WHATSAPP}?text=${mensaje}`;
+
+
+    window.open(url, "_blank");
+
+}
+
+
+/* =====================================================
+   PERSONALIZADOR
+===================================================== */
+
+function mostrarPersonalizador() {
+
+    document.getElementById("inicio").style.display =
+        "none";
+
+    document.getElementById("vistaCategoria").style.display =
+        "none";
+
+    document.getElementById("personalizador")
+        .classList.add("activo");
+
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+}
+
+
+/* =====================================================
+   FOTO PERSONALIZADA
+===================================================== */
+
+function mostrarFotoPersonalizada(event) {
+
+    const archivo =
+        event.target.files[0];
+
+    const preview =
+        document.getElementById("previewFoto");
+
+
+    if (!archivo) {
+
+        preview.style.display = "none";
+
+        return;
+
+    }
+
+
+    const lector =
+        new FileReader();
+
+
+    lector.onload = function(e) {
+
+        preview.src =
+            e.target.result;
+
+        preview.style.display =
+            "block";
+
+    };
+
+
+    lector.readAsDataURL(archivo);
+
+}
+
+
+/* =====================================================
+   PERSONALIZACIÓN → WHATSAPP
+===================================================== */
+
+function enviarPersonalizacion() {
+
+    const descripcion =
+        document
+            .getElementById("descripcionPersonalizada")
+            .value
+            .trim();
+
+
+    const archivo =
+        document
+            .getElementById("fotoPersonalizada")
+            .files[0];
+
+
+    if (!descripcion && !archivo) {
+
+        alert(
+            "Cuéntanos cómo quieres tu torta o agrega una imagen de referencia."
+        );
+
+        return;
+
+    }
+
+
+    let mensaje =
+        "✨ *COTIZACIÓN PERSONALIZADA*%0A%0A";
+
+
+    mensaje +=
+        "Hola Emita Repostería 💕%0A%0A";
+
+
+    if (descripcion) {
+
+        mensaje +=
+            `Quiero una torta personalizada:%0A${encodeURIComponent(descripcion)}%0A%0A`;
+
+    }
+
+
+    if (archivo) {
+
+        mensaje +=
+            "📷 Tengo una imagen de referencia y la adjuntaré en este chat.%0A%0A";
+
+    }
+
+
+    mensaje +=
+        "Me gustaría conocer el precio y las opciones disponibles. 💕";
+
+
+    const url =
+        `https://wa.me/${NUMERO_WHATSAPP}?text=${mensaje}`;
+
+
+    window.open(url, "_blank");
+
+}
+
+
+/* =====================================================
+   NAVEGACIÓN
+===================================================== */
+
+function mostrarInicio() {
+
+    document.getElementById("inicio").style.display =
+        "block";
+
+    document.getElementById("vistaCategoria").style.display =
+        "none";
+
+    document.getElementById("personalizador")
+        .classList.remove("activo");
+
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+}
+
+
+function mostrarCatalogo() {
+
+    mostrarInicio();
+
+    setTimeout(() => {
+
+        window.scrollTo({
+            top: document.querySelector(".seccion").offsetTop - 50,
+            behavior: "smooth"
+        });
+
+    }, 100);
+
+}
+
+
+/* =====================================================
+   MENU
+===================================================== */
+
+function abrirMenu() {
+
+    document
+        .getElementById("menu")
+        .classList.add("abierto");
+
+}
+
+
+function cerrarMenu() {
+
+    document
+        .getElementById("menu")
+        .classList.remove("abierto");
+
+}
+
+
+/* =====================================================
+   INICIO
+===================================================== */
+
+actualizarCarrito();
+
+</script>
+
+</body>
+</html>
